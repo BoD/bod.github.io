@@ -1,0 +1,304 @@
+body, p, table, tr, td, h1, h2 {
+	font-family: Verdana, Helvetica, Arial, sans-serif;
+	font-size: 13px;
+}
+
+body {
+	background: #f6f6f6;
+}
+
+h1 {
+	color: #ff8000;
+	font-size: 21px;
+}
+
+h2 {
+	color: #ff8000;
+	font-size: 16px;
+	text-transform: capitalize;
+}
+
+a {
+	color: green;
+}
+
+a.permalink {
+	color: white;
+}
+
+a:hover {
+	color: black;
+	background: #f6f6f6;
+}
+
+ul {
+	margin: 0 0 0 0;
+	padding-bottom: 15px;
+}
+
+p {
+	padding-bottom: 15px;
+}
+
+.box, .left-box, .right-box, .xslt-item-box {
+	background: white;
+	font-family: Verdana, Helvetica, Arial, sans-serif;
+}
+
+.left-box {
+	width: 160px;
+}
+
+.right-box {
+	width: 450px;
+}
+
+.xslt-item-box {
+	width: 640px;
+}
+
+.space {
+	font-size: 0;
+	width: 170px;
+	height: 10px;
+}
+
+.box-title {
+	font-weight: bold;
+	background-color: #ff8000;
+	background-image: url("img/box-title-bg.jpg");
+	background-repeat: repeat;
+	color: white;
+	font-size: 10px;
+	padding: 2px 2px 3px 2px;
+	text-align: left;
+}
+
+.box-body {
+	border: solid #ff8000 1px;
+	padding: 5px 10px 5px 10px;
+	font-size: 13px;
+	text-align: left;
+}
+
+
+.box-shadow-top-right {
+	padding: 0 0 0 0;
+	background-image: url("img/shadow-right.gif");
+	background-position: 0 0;
+	background-repeat: repeat-y;
+	background-color: #f6f6f6;
+	width: 8px;
+	vertical-align: top;
+	text-align: left;
+}
+
+.box-shadow-right {
+	padding: 0 0 0 0;
+	background-image: url("img/shadow-right.gif");
+	background-position: 0 0;
+	background-repeat: repeat-y;
+	background-color: #f6f6f6;
+	width: 8px;
+	text-align: left;
+}
+
+
+.box-shadow-bottom {
+	padding: 0 0 0 0;
+	background-image: url("img/shadow-bottom.gif");
+	background-position: 0 0;
+	background-repeat: repeat-x;
+	background-color: #f6f6f6;
+	height: 8px;
+	text-align: left;
+	font-size: 0;
+}
+
+.box-shadow-bottom-right {
+	padding: 0 0 0 0;
+	background-color: #f6f6f6;
+	height: 8px;
+	text-align: left;
+	font-size: 0;
+}
+
+td img {
+	display: block;
+	text-align: left;
+}
+
+.valign-top {
+	vertical-align: top;
+}
+
+.align-right {
+	text-align: right;
+}
+
+.align-left {
+	text-align: left;
+}
+
+.valid-markup-box1 {
+	text-align: center;
+	width: 100%;
+}
+
+.valid-markup-box2 {
+	display: inline;
+	text-align: center;
+	border: none;
+}
+
+#description-div {
+	font-size: 13px;
+}
+
+.small {
+	font-size: 9px;
+}
+
+.not-too-small {
+	font-size: 11px;
+}
+
+.very-fucking-small {
+	font-size: 6px;
+}
+
+.no-comment {
+	font-size: 9px;
+	color: #808080;
+}
+
+.comment-date {
+	font-size: 9px;
+	color: #000050;
+	vertical-align: middle;
+}
+
+.comment-body {
+	font-size: 11px;
+	font-style: italic;
+	vertical-align: middle;
+}
+
+.input-text, .input-text-hint, .input-text-index, .input-text-hint-index, .input-spambot, .input-spambot-hint {
+	border-style: solid;
+	border-width: 1px;
+	border-color: #e2e2e2;
+	font-size: 10px;
+	width: 350px;
+	height: 18px;
+	-moz-box-sizing: border-box;
+	color: black;
+}
+
+.input-text-index, .input-text-hint-index {
+	width: 280px;
+}
+
+.input-spambot, .input-spambot-hint {
+	width: 70px;
+}
+
+.input-text-hint, .input-text-hint-index, .input-spambot-hint {
+	color: #B0B0B0;
+}
+
+.input-button {
+	font-size: 10px;
+	height: 18px;
+	border-style: solid;
+	border-width: 1px;
+	background-color: #f6f6f6;
+}
+
+.input-button:hover {
+	background-color: #ff8000;
+}
+
+.form-p {
+	display: inline!important;
+	padding: 0 0 0 0!important;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.dvd-table {
+	background: white;
+	font-family: Verdana, Helvetica, Arial, sans-serif;
+	border: solid #ff8000 1px;
+}
+
+.italic {
+	font-style: italic;
+}
+
+.capitalize {
+	text-transform: capitalize;
+}
+
+.list-item, .center-list-item {
+	font-family: Verdana, Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	white-space: nowrap;
+}
+
+.center-list-item {
+	text-align: center;
+}
+
+.top-bar-box-body {
+	border: solid #ff8000 1px;
+	padding: 0 0 0 0;
+	background: white;
+}
+
+.top-bar-cell-logo {
+	padding: 0 0 0 0;
+}
+
+.top-bar-cell {
+	padding-left: 5px;
+	padding-right: 5px;
+	font-size: 9px;
+}
+
+.top-bar-cell-selected {
+	color: black;
+	background: #ffd5aa;
+}
+
+.bookmark-section-title {
+	padding-top: 10px;
+	padding-bottom: 5px;
+	text-transform: capitalize;
+	color: #ff8000;
+	font-family: Verdana, Helvetica, Arial, sans-serif;
+	font-size: 16px;
+}
+
+.bookmark-description {
+	padding-left: 10px;
+}
+
+.bookmark-link {
+	padding-bottom: 15px;
+}
+
+.bookmark-textfield {
+	border-style: solid;
+	border-width: 1px;
+	font-size: 10px;
+	height: 18px;
+	-moz-box-sizing: border-box;
+}
+
+.external {
+	display: inline;
+	border: none;
+}

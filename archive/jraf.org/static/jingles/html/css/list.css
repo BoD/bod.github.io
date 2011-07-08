@@ -1,0 +1,80 @@
+.list-logo {
+	width: 214px;
+	height: 78px;
+	padding: 0px;
+}
+
+.list-jingle-name {
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 14px;
+	color: #8080FF;
+	background-color: #8080FF;
+	width: 100%;
+}
+
+.list-jingle-name-div-shadow {
+	position: relative;
+	left: -6px;
+	top: 2px;
+	width: 100%;
+	color: #404080;
+}
+
+.list-jingle-name-div {
+	position: absolute;
+	top: -2px;
+	left: -2px;
+	color: white;
+}
+
+.list-new, .list-new-shadow {
+	color: yellow;
+	font-style: italic;
+}
+
+.list-new-shadow {
+	color: #404080;
+}
+
+.list-properties-table {
+	width: 98%;
+}
+
+.list-properties-table-picture {
+	width: 210px;
+}
+
+.list-see-full-details-icon {
+	position: relative;
+	left: -26px;
+}
+
+
+.list-properties-name, .list-properties-value {
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 14px;
+	color: #8080FF;
+	padding-right: 5px;
+	height: 20px;
+}
+
+.list-properties-name {
+	white-space: nowrap;
+}
+
+.list-properties-value {
+	font-weight: normal;
+	color: white;
+}
+
+.list-download {
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	color: white;
+	text-decoration: none;
+	font-size: 11px;
+	position: relative;
+	top: -2px;
+}

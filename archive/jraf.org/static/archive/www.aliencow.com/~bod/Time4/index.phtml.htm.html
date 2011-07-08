@@ -1,0 +1,328 @@
+<html><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<HTML>
+<HEAD>
+<TITLE>La page de Time 4</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+  if (top.location != self.location)
+    top.location.href = self.location;
+</SCRIPT>
+<STYLE>
+           .title  {
+           	font-family : monospace;
+           	font-size : 80px;
+           	color : #FF4060;
+           	text-decoration : underline;
+           }
+
+           .version  {
+           	font-family : 'Lucida Console',monospace;
+           	font-size : small;
+           	color : #FF4060;
+           }
+
+           .section  {
+           	font-family : 'Lucida Console',monospace;
+           	font-size : small;
+           	color : #FFFFFF;
+           	font-weight : bold;
+           }
+
+           .param_obl  {
+           	font-family : 'Lucida Console',monospace;
+           	font-size : small;
+           	color : #FFBB50;
+           	font-weight : bold;
+           	font-style : italic;
+           }
+
+           .param_opt  {
+           	font-family : 'Lucida Console',monospace;
+           	font-size : small;
+           	color : #50FF50;
+           	font-weight : bold;
+           	font-style : italic;
+           }
+
+           .ex  {
+           	font-family : 'Lucida Console',monospace;
+           	font-size : small;
+           	color : #BB80FF;
+           	font-weight : bold;
+           }
+
+           .ex2  {
+           	font-family : Arial,sans-serif;
+           	font-size : xx-small;
+           	color : #BB80FF;
+           	font-weight : bold;
+			text-decoration : underline;
+           }
+
+           .explic  {
+           	font-family : Arial,sans-serif;
+           	font-size : small;
+           	color : White;
+           }
+
+           .col  {
+           	font-family : Arial,sans-serif;
+           	font-size : medium;
+           	color : Red;
+			}
+
+           .normal  {
+           	font-family : Arial,sans-serif;
+           	font-size : medium;
+           	color : White;
+           }
+
+</STYLE>
+
+</HEAD>
+
+<BODY BGCOLOR="#600000">
+
+<DIV ALIGN="center">
+<SPAN CLASS="title">Time 4</SPAN>
+<BR>
+<SPAN CLASS="version">Current version is v4.00ß472
+977936722000
+</SPAN>
+</DIV>
+<BR>
+<BR><BR><BR>
+<SPAN CLASS="normal">Bienvenue sur la page de Time 4 !<BR>
+<BR>
+Time est un petit bot IRC &eacute;crit en Java.<BR>
+Il g&egrave;re une base de donn&eacute;es des users du channel avec des infos associ&eacute;es (email, last seen, etc.).<BR>
+Il donne aussi quelques services comme l'heure, ou des petits jeux.<BR>
+Il est customizable, c'est &agrave; dire qu'il est possible (et tr&egrave;s facile) de lui ajouter des modules pour de nouvelles fonctionnalit&eacute;s.<BR>
+Il est open source et gratuit. L'install de la version en cours, qui contient aussi les sources, est disponible <A HREF="Time.zip" tppabs="http://www.aliencow.com:81/~bod/Time4/Time.zip">ici</A>.<BR>
+<BR>
+<BR>
+<BR>
+</SPAN>
+<SPAN CLASS="section">Manuel de r&eacute;f&eacute;rence :</SPAN><BR><BR>
+<SPAN CLASS="explic">Les param&egrave;tres <B>obligatoires</B> sont en <SPAN CLASS="param_obl">orange</SPAN>.<BR>
+Les param&egrave;tres <B>optionnels</B> sont en <SPAN CLASS="param_opt">vert</SPAN>.<BR>
+Les exemples sont en <SPAN CLASS="ex">violet</SPAN>.
+</SPAN>
+<BR>
+<BR>
+<BR>
+
+<TABLE CELLPADDING="10" BORDER="1" BORDERCOLORDARK="#600000" BORDERCOLORLIGHT="#600000" WIDTH="100%">
+<TR BORDERCOLOR="Red" BORDER="5"><TD><SPAN CLASS="section">!time </SPAN><SPAN CLASS="param_opt">question</SPAN><BR><BR>
+<SPAN CLASS="explic">
+<B>Pose une question &agrave; Time.</B><BR>
+Il vous r&eacute;pondra, s&ucirc;rement &agrave; c&ocirc;t&eacute; de la plaque :)
+Mais parfois la r&eacute;ponse est dr&ocirc;le. . . C'est d&eacute;j&agrave; &ccedil;a !<BR>
+Il est &agrave; noter que &ccedil;a marche mieux avec les questions auxquelles on peut r&eacute;pondre par oui ou non.
+</SPAN>
+<BR><BR>
+<SPAN CLASS="ex2">Exemple :<BR></SPAN>
+<SPAN CLASS="ex">!time demain, il fera beau ?</SPAN></TD></TR>
+
+<TR BORDERCOLOR="Red"><TD><SPAN CLASS="section">!time time </SPAN><SPAN CLASS="param_opt">pays</SPAN><BR><BR>
+<SPAN CLASS="explic">
+<B>Donne l'heure qu'il est et le nombre de secondes avant (ou depuis) l'an 2000 en france, ou dans le pays en param&egrave;tre.</B><BR>
+Pour le moment les seuls pays possibles sont France et Quebec.
+</SPAN>
+<BR><BR>
+<SPAN CLASS="ex2">Exemples :<BR></SPAN>
+<SPAN CLASS="ex">!time time<BR>!time time quebec</SPAN></TD></TR>
+
+<TR BORDERCOLOR="Red"><TD><SPAN CLASS="section">!time version</SPAN><BR><BR>
+<SPAN CLASS="explic">
+<B>Indique la version actuelle de Time.</B><BR>
+Ainsi que des copyrights vachement int&eacute;ressants.
+</SPAN>
+</TD></TR>
+
+<TR BORDERCOLOR="Red"><TD><SPAN CLASS="section">!time seen </SPAN><SPAN CLASS="param_obl">nick</SPAN><BR><BR>
+<SPAN CLASS="explic">
+<B>Indique quand la personne a &eacute;t&eacute; vue la derni&egrave;re fois sur le channel.</B><BR>
+"Vu" correspond en fait &agrave; un join, un privmsg ou tout autre &eacute;v&egrave;nement...
+</SPAN>
+<BR><BR>
+<SPAN CLASS="ex2">Exemple :<BR></SPAN>
+<SPAN CLASS="ex">!time seen toto</SPAN></TD></TR>
+
+<TR BORDERCOLOR="Red"><TD><SPAN CLASS="section">!time xseen </SPAN><SPAN CLASS="param_obl">nick</SPAN><BR><BR>
+<SPAN CLASS="explic">
+<B>Une version &eacute;tendue de !time seen.</B><BR>
+Indique en plus de la date : la derniere phrase de la personne, ainsi que son message de quit.
+</SPAN>
+<BR><BR>
+<SPAN CLASS="ex2">Exemple :<BR></SPAN>
+<SPAN CLASS="ex">!time xseen tyty</SPAN></TD></TR>
+
+<TR BORDERCOLOR="Red"><TD><SPAN CLASS="section">!time quitmsg </SPAN><SPAN CLASS="param_obl">nick</SPAN><BR><BR>
+<SPAN CLASS="explic">
+<B>Indique le dernier "quit message" de la personne.</B><BR>
+Le "quit message" est le message qui a &eacute;t&eacute; mis quand la personne a quit&eacute;. (Au cas o&ugrave;...)
+</SPAN>
+<BR><BR>
+<SPAN CLASS="ex2">Exemple :<BR></SPAN>
+<SPAN CLASS="ex">!time quitmsg toto</SPAN></TD></TR>
+
+<TR BORDERCOLOR="Red"><TD><SPAN CLASS="section">!time lastmsg </SPAN><SPAN CLASS="param_obl">nick</SPAN><BR><BR>
+<SPAN CLASS="explic">
+<B>Indique la derniere phrase de la personne.</B>
+</SPAN>
+<BR><BR>
+<SPAN CLASS="ex2">Exemple :<BR></SPAN>
+<SPAN CLASS="ex">!time lastmsg tutu</SPAN></TD></TR>
+
+<TR BORDERCOLOR="Red"><TD><SPAN CLASS="section">!time mail </SPAN><SPAN CLASS="param_obl">nick</SPAN><BR>
+<BR><SPAN CLASS="explic">
+<B>Indique l'email de la personne.</B><BR>
+Il peut y'en avoir plusieurs. Lisez la suite si vous voulez savoir comment changer d'email.
+</SPAN><BR><BR>
+<SPAN CLASS="ex2">Exemple :<BR></SPAN>
+<SPAN CLASS="ex">!time mail toto</SPAN></TD></TR>
+
+<TR BORDERCOLOR="Red"><TD><SPAN CLASS="section">!time homepage </SPAN><SPAN CLASS="param_obl">nick</SPAN><BR>
+<BR><SPAN CLASS="explic">
+<B>Indique la home page de la personne.</B><BR>
+Il peut y'en avoir plusieurs. Lisez la suite si vous voulez savoir comment changer de home page.
+</SPAN><BR><BR>
+<SPAN CLASS="ex2">Exemple :<BR></SPAN>
+<SPAN CLASS="ex">!time homepage toto</SPAN></TD></TR>
+
+<TR BORDERCOLOR="Red"><TD><SPAN CLASS="section">!time icq </SPAN><SPAN CLASS="param_obl">nick</SPAN><BR>
+<BR><SPAN CLASS="explic">
+<B>Indique le num&eacute;ro d'icq (UIN) de la personne.</B><BR>
+Il ne peut y'en avoir plusieurs. Lisez la suite si vous voulez savoir comment changer d'UIN.
+</SPAN><BR><BR>
+<SPAN CLASS="ex2">Exemple :<BR></SPAN>
+<SPAN CLASS="ex">!time icq toto</SPAN></TD></TR>
+
+<TR BORDERCOLOR="Red"><TD><SPAN CLASS="section">!time changemail </SPAN><SPAN CLASS="param_obl">mail</SPAN><SPAN CLASS="param_opt">,mail2,mail3,...</SPAN><BR>
+<BR><SPAN CLASS="explic">
+<B>Change votre email.</B><BR>
+Vous pouvez en sp&eacute;cifier plusieurs, en les s&eacute;parant par une virgule, mais attention, ne mettez pas d'espaces entre les virgules !<BR>
+Et aussi ne mettez pas "mailto:" devant.
+</SPAN><BR><BR>
+<SPAN CLASS="ex2">Exemples :<BR></SPAN>
+<SPAN CLASS="ex">!time changemail toto@naz.com<BR>!time changemail toto@yahoo.com,toto@hotmail.com</SPAN></TD></TR>
+
+<TR BORDERCOLOR="Red"><TD><SPAN CLASS="section">!time changehomepage </SPAN><SPAN CLASS="param_obl">url</SPAN><SPAN CLASS="param_opt">,url2,url3,...</SPAN><BR>
+<BR><SPAN CLASS="explic">
+<B>Change votre home page.</B><BR>
+Vous pouvez en sp&eacute;cifier plusieurs, en les s&eacute;parant par une virgule, mais attention, ne mettez pas d'espaces entre les virgules !<BR>
+Et aussi ne mettez pas "http://" devant.
+</SPAN><BR><BR>
+<SPAN CLASS="ex2">Exemples :<BR></SPAN>
+<SPAN CLASS="ex">!time changehomepage www.naz.com/toto<BR>!time changehomepage www.multimania.com/toto,toto.citeweb.net</SPAN></TD></TR>
+
+<TR BORDERCOLOR="Red"><TD><SPAN CLASS="section">!time changeicq </SPAN><SPAN CLASS="param_obl">UIN</SPAN><BR>
+<BR><SPAN CLASS="explic">
+<B>Change votre num&eacute;ro icq.</B><BR>
+Vous pouvez en sp&eacute;cifier plusieurs, en les s&eacute;parant par une virgule, mais attention, ne mettez pas d'espaces entre les virgules !
+</SPAN><BR><BR>
+<SPAN CLASS="ex2">Exemple :<BR></SPAN>
+<SPAN CLASS="ex">!time changeicq 47477444</SPAN></TD></TR>
+
+<TR BORDERCOLOR="Red"><TD><SPAN CLASS="section">!time newsgroup</SPAN><BR>
+<BR><SPAN CLASS="explic">
+<B>Indique l'adresse du newsgroup du channel.</B><BR>
+Cette fonction est en cours d'impl&eacute;mentation.. Nan jd&eacute;con.
+</SPAN></TD></TR>
+
+<TR BORDERCOLOR="Red"><TD><SPAN CLASS="section">!time dicton</SPAN><BR>
+<BR><SPAN CLASS="explic">
+<B>Indique un dicton de saison.</B><BR>
+Le dicton est tir&eacute; au hasard, mais en tenant compte de la date du jour.<BR>
+Cette fonction est sponsoris&eacute;e par Alain Gillopetr&eacute; et Bruno Masure.
+</SPAN></TD></TR>
+
+<TR BORDERCOLOR="Red"><TD><SPAN CLASS="section">!time rumeur </SPAN><SPAN CLASS="param_opt">nick nick2</SPAN><BR>
+<BR><SPAN CLASS="explic">
+<B>Indique les derniers ragots entendus sur le chan.</B><BR>
+Vous pouvez indiquer 1 ou 2 nicks pour cibler la rumeur.<BR>
+(Les id&eacute;es exprim&eacute;es dans ces ragots ne sauraient en aucun cas engager la r&eacute;sponsabilit&eacute; de Time ou de
+son auteur).
+</SPAN><BR><BR>
+<SPAN CLASS="ex2">Exemples :<BR></SPAN>
+<SPAN CLASS="ex">!time rumeur<BR>!time rumeur toto<BR>!time tumeur toto titi</SPAN></TD></TR>
+
+<TR BORDERCOLOR="Red"><TD><SPAN CLASS="section">!time citation</SPAN><BR>
+<BR><SPAN CLASS="explic">
+<B>Tire au hasard une citation dans le livre de citations du channel.</B><BR>
+Lisez la suite si vous voulez savoir comment ajouter une citation.
+</SPAN></TD></TR>
+
+<TR BORDERCOLOR="Red"><TD><SPAN CLASS="section">!time addcitation &lt;</SPAN><SPAN CLASS="param_obl">nick</SPAN><SPAN CLASS="section">&gt;</SPAN><SPAN CLASS="param_obl"> citation</SPAN><BR>
+<BR><SPAN CLASS="explic">
+<B>Ajoute la citation dans le livre de citations du channel.</B><BR>
+Attention &agrave; la syntaxe : n'oubliez pas les &lt;&gt; au tour du nick sinon &ccedil;a marchera pas.
+</SPAN><BR><BR>
+<SPAN CLASS="ex2">Exemple :<BR></SPAN>
+<SPAN CLASS="ex">!time addcitation &lt;clinton&gt; I did not have sex relation with that woman !</SPAN></TD></TR>
+
+<TR BORDERCOLOR="Red"><TD><SPAN CLASS="section">!time tagline</SPAN><BR>
+<BR><SPAN CLASS="explic">
+<B>Un petit jeu : tire au hasard la "tagline" d'un film. Vous devez retrouver le titre du film.</B><BR>
+La tagline est une petite phrase sens&eacute;e r&eacute;summer et donner envie de voir le film...<BR>
+Pour savoir comment donner une r&eacute;ponse, lisez la suite.
+</SPAN></TD></TR>
+
+<TR BORDERCOLOR="Red"><TD><SPAN CLASS="section">!time reponse </SPAN><SPAN CLASS="param_obl">r&eacute;ponse</SPAN><BR>
+<BR><SPAN CLASS="explic">
+<B>Participe au jeu de la tagline.</B><BR>
+Vous avez gagn&eacute; si vous trouvez "&agrave; peu pr&egrave;s" le titre du film.
+</SPAN><BR><BR>
+<SPAN CLASS="ex2">Exemple :<BR></SPAN>
+<SPAN CLASS="ex">!time reponse Return of the jedi</SPAN></TD></TR>
+
+<TR BORDERCOLOR="Red"><TD><SPAN CLASS="section">!time score</SPAN><SPAN CLASS="param_opt"> personne</SPAN><BR>
+<BR><SPAN CLASS="explic">
+<B>Indique le score de la personne en param&egrave;tre ou de la personne qui fait le demande.</B><BR>
+Le score correspond pour l'instant au score du jeu de la tagline.
+</SPAN><BR><BR>
+<SPAN CLASS="ex2">Exemple :<BR></SPAN>
+<SPAN CLASS="ex">!time score<BR>!time score titi</SPAN></TD></TR>
+
+<TR BORDERCOLOR="Red"><TD><SPAN CLASS="section">!time xtime</SPAN><BR>
+<BR><SPAN CLASS="explic">
+<B>Une version &eacute;tendue de !time time.</B><BR>
+La r&eacute;ponse comprend la date, l'heure, l'unix time utc (nombre de secondes depuis le 01/01/1970 &agrave; minuit utc), l'internet swatch beat et le ttsb (time selon BoD) qui
+est le nombre de seconde jusqu'&agrave; ou depuis l'an 2000.
+</SPAN></TD></TR>
+
+<TR BORDERCOLOR="Red"><TD><SPAN CLASS="section">!time topic</SPAN><BR>
+<BR><SPAN CLASS="explic">
+<B>Change le topic du channel avec une citation tirée des citations du channel.</B><BR>
+</SPAN></TD></TR>
+
+<TR BORDERCOLOR="Red"><TD><SPAN CLASS="section">!time WelcomeMsg </SPAN><SPAN CLASS="param_opt">personne</SPAN><BR>
+<BR><SPAN CLASS="explic">
+<B>Indique le message de bienvenue de la personne en param&egrave;tre, ou de la personne qui fait la demande.</B><BR>
+Le message de bienvenue est un message que time dira sur le channel quand une personne arrive.
+</SPAN><BR><BR>
+<SPAN CLASS="ex2">Exemples :<BR></SPAN>
+<SPAN CLASS="ex">!time welcomeMsg<BR>!time welcomeMsg toto</SPAN></TD></TR>
+
+<TR BORDERCOLOR="Red"><TD><SPAN CLASS="section">!time changeWelcome </SPAN><SPAN CLASS="param_obl">message</SPAN><BR>
+<BR><SPAN CLASS="explic">
+<B>Change votre message de bienvenue.</B>
+</SPAN><BR><BR>
+<SPAN CLASS="ex2">Exemple :<BR></SPAN>
+<SPAN CLASS="ex">!time changeWelcome Salut mon pote !</SPAN></TD></TR>
+
+<TR BORDERCOLOR="Red"><TD><SPAN CLASS="section">!time message </SPAN><SPAN CLASS="param_opt">personne message</SPAN><BR>
+<BR><SPAN CLASS="explic">
+<B>Envoie un message &agrave; la personne en param&egrave;tre, ou bien indique le message de la personne qui fait la demande.</B><BR>
+La pr&eacute;sence d'un nouveau message sera indiqu&eacute; &agrave; la personne &agrave; son arriv&eacute;e sur le channel.<BR>
+Il lui suffira de faire "!time message" pour le consulter.
+</SPAN><BR><BR>
+<SPAN CLASS="ex2">Exemple :<BR></SPAN>
+<SPAN CLASS="ex">!time message<BR>!time message Durand Il faut que je te parle d'un truc, passe-moi un coup de fil !</SPAN></TD></TR>
+
+
+</TABLE>
+
+</BODY>
+</HTML>

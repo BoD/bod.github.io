@@ -1,0 +1,206 @@
+// BODTOPIC102.VSC - BoDTopic v1.02
+// Developed under Visual IRC '97 1.00
+
+Name BoDTopic v1.02
+
+// Aliases
+
+Alias TTOPIC Ctrl+T
+  @ $channelBoDTopic=$activewindow()
+  
+  if [$1]!=[]
+     topic $channelBoDTopic $1- $BoDTopicDefaultSuffixe
+  else
+     
+     @ $FormBoDTopic = $new(TForm)
+     @p $FormBoDTopic.BorderIcons = [biSystemMenu]
+     @p $FormBoDTopic.BorderStyle = bsDialog
+     @p $FormBoDTopic.Caption = BoD Top-ic v1.01 - $channelBoDTopic
+     @p $FormBoDTopic.ClientHeight = 225
+     @p $FormBoDTopic.ClientWidth = 521
+     @p $FormBoDTopic.Font.Charset = DEFAULT_CHARSET
+     @p $FormBoDTopic.Font.Color = clWindowText
+     @p $FormBoDTopic.Font.Height = -11
+     @p $FormBoDTopic.Font.Name = MS Sans Serif
+     @p $FormBoDTopic.Font.Style = []
+     @p $FormBoDTopic.Position = poScreenCenter
+     @p $FormBoDTopic.PixelsPerInch = 96
+     @p $FormBoDTopic.TextHeight = 13
+     @p $FormBoDTopic.Visible = True
+     
+     $FormBoDTopic.BeginUpdate
+     
+     @ $StringListBoDTopic = $new(TStringList)
+     $StringListBoDTopic.LoadFromAlias BoDTopicListeTopics
+     
+     @ $ListBoxBoDTopic = $new(TListBox ownedby $FormBoDTopic)
+     @p $ListBoxBoDTopic.Left = 8
+     @p $ListBoxBoDTopic.Top = 8
+     @p $ListBoxBoDTopic.Width = 505
+     @p $ListBoxBoDTopic.Height = 121
+     @p $ListBoxBoDTopic.ItemHeight = 13
+     @p $ListBoxBoDTopic.TabOrder = 6
+     @p $ListBoxBoDTopic.Items = $StringListBoDTopic
+     @p $ListBoxBoDTopic.OnClick = BoDTopicSelect
+     
+     @ $EditTopicBoDTopic = $new(TEdit ownedby $FormBoDTopic)
+     @p $EditTopicBoDTopic.Left = 8
+     @p $EditTopicBoDTopic.Top = 136
+     @p $EditTopicBoDTopic.Width = 505
+     @p $EditTopicBoDTopic.Height = 21
+     @p $EditTopicBoDTopic.TabOrder = 0
+     @p $EditTopicBoDTopic.OnChange = BoDTopicChangeTopic
+     
+     @ $EditSuffixeBoDTopic = $new(TEdit ownedby $FormBoDTopic)
+     @p $EditSuffixeBoDTopic.Left = 8
+     @p $EditSuffixeBoDTopic.Top = 160
+     @p $EditSuffixeBoDTopic.Width = 441
+     @p $EditSuffixeBoDTopic.Height = 21
+     @p $EditSuffixeBoDTopic.TabOrder = 0
+     @p $EditSuffixeBoDTopic.Text = $BoDTopicDefaultSuffixe
+     @p $EditSuffixeBoDTopic.Font.Color = Clgray
+     @p $EditSuffixeBoDTopic.OnChange = BoDTopicChangeSuffixe
+     
+     @ $CheckBoxBoDTopic = $new(TCheckBox ownedby $FormBoDTopic)
+     @p $CheckBoxBoDTopic.Left = 460
+     @p $CheckBoxBoDTopic.Top = 167
+     @p $CheckBoxBoDTopic.Width = 57
+     @p $CheckBoxBoDTopic.Height = 17
+     @p $CheckBoxBoDTopic.Caption = Suffixe
+     @p $CheckBoxBoDTopic.TabOrder = 8
+     @p $CheckBoxBoDTopic.Checked = $BoDTopicDefaultChecked
+     @p $CheckBoxBoDTopic.OnClick = BoDTopicChangeCheck
+     BoDTopicChangeCheck
+     
+     @ $BitBtnSetBoDTopic = $new(TBitBtn ownedby $FormBoDTopic)
+     @p $BitBtnSetBoDTopic.Left = 8
+     @p $BitBtnSetBoDTopic.Top = 192
+     @p $BitBtnSetBoDTopic.Width = 81
+     @p $BitBtnSetBoDTopic.Height = 25
+     @p $BitBtnSetBoDTopic.TabOrder = 1
+     @p $BitBtnSetBoDTopic.Kind = bkOK
+     @p $BitBtnSetBoDTopic.ModalResult = mrNone
+     @p $BitBtnSetBoDTopic.Caption = &Set topic
+     @p $BitBtnSetBoDTopic.OnClick = BoDTopicSetTopic
+     @p $BitBtnSetBoDTopic.Enabled = False
+     
+     @ $BitBtnAjouterBoDTopic = $new(TBitBtn ownedby $FormBoDTopic)
+     @p $BitBtnAjouterBoDTopic.Left = 96
+     @p $BitBtnAjouterBoDTopic.Top = 192
+     @p $BitBtnAjouterBoDTopic.Width = 81
+     @p $BitBtnAjouterBoDTopic.Height = 25
+     @p $BitBtnAjouterBoDTopic.TabOrder = 2
+     @p $BitBtnAjouterBoDTopic.Kind = bkRetry
+     @p $BitBtnAjouterBoDTopic.ModalResult = mrNone
+     @p $BitBtnAjouterBoDTopic.Caption = &Ajouter
+     @p $BitBtnAjouterBoDTopic.OnClick = BoDTopicAjouter
+     
+     @ $BitBtnSupprimerBoDTopic = $new(TBitBtn ownedby $FormBoDTopic)
+     @p $BitBtnSupprimerBoDTopic.Left = 184
+     @p $BitBtnSupprimerBoDTopic.Top = 192
+     @p $BitBtnSupprimerBoDTopic.Width = 81
+     @p $BitBtnSupprimerBoDTopic.Height = 25
+     @p $BitBtnSupprimerBoDTopic.TabOrder = 3
+     @p $BitBtnSupprimerBoDTopic.Kind = bkAbort
+     @p $BitBtnSupprimerBoDTopic.ModalResult = mrNone
+     @p $BitBtnSupprimerBoDTopic.Caption = S&upprimer
+     @p $BitBtnSupprimerBoDTopic.Enabled = False
+     @p $BitBtnSupprimerBoDTopic.OnClick = BoDTopicSupprimer
+     
+     @ $BitBtnRandomBoDTopic = $new(TBitBtn ownedby $FormBoDTopic)
+     @p $BitBtnRandomBoDTopic.Left = 272
+     @p $BitBtnRandomBoDTopic.Top = 192
+     @p $BitBtnRandomBoDTopic.Width = 81
+     @p $BitBtnRandomBoDTopic.Height = 25
+     @p $BitBtnRandomBoDTopic.TabOrder = 4
+     @p $BitBtnRandomBoDTopic.Kind = bkHelp
+     @p $BitBtnRandomBoDTopic.ModalResult = mrNone
+     @p $BitBtnRandomBoDTopic.Caption = &Random
+     @p $BitBtnRandomBoDTopic.OnClick = BoDTopicRandom
+     
+     @ $BitBtnFermerBoDTopic = $new(TBitBtn ownedby $FormBoDTopic)
+     @p $BitBtnFermerBoDTopic.Left = 440
+     @p $BitBtnFermerBoDTopic.Top = 192
+     @p $BitBtnFermerBoDTopic.Width = 75
+     @p $BitBtnFermerBoDTopic.Height = 25
+     @p $BitBtnFermerBoDTopic.TabOrder = 5
+     @p $BitBtnFermerBoDTopic.Kind = bkClose
+     @p $BitBtnFermerBoDTopic.ModalResult = mrNone
+     @p $BitBtnFermerBoDTopic.Caption = &Fermer
+     
+     $FormBoDTopic.EndUpdate
+     $EditTopicBoDTopic.SetFocus
+     
+  endif
+EndAlias
+
+Alias BODTOPICSETTOPIC
+  if [$prop($CheckBoxBoDTopic.Checked)]==[True]
+     topic $channelBoDTopic $Prop($EditTopicBoDTopic.Text) $Prop($EditSuffixeBoDTopic.Text)
+  else
+     topic $channelBoDTopic $Prop($EditTopicBoDTopic.Text)
+  endif
+EndAlias
+
+Alias BODTOPICLISTETOPICS
+  Viendez ici c'est top !
+EndAlias
+
+Alias BODTOPICAJOUTER
+  if ([$prop($EditTopicBoDTopic.Text)] != [])
+     $StringListBoDTopic.add $prop($EditTopicBoDTopic.Text)
+     $ListBoxBoDTopic.items.add $prop($EditTopicBoDTopic.Text)
+     $StringListBoDTopic.SaveToAlias BoDTopicListeTopics
+  endif
+EndAlias
+
+Alias BODTOPICSELECT
+  @p $EditTopicBoDTopic.Text = $prop($ListBoxBoDTopic.ItemText)
+  @p $BitBtnSupprimerBoDTopic.Enabled = True
+EndAlias
+
+Alias BODTOPICCHANGESUFFIXE
+  if [$prop($EditSuffixeBoDTopic.Text)]==[]
+     @p $CheckBoxBoDTopic.Checked = False
+  else
+     @p $CheckBoxBoDTopic.Checked = True
+  endif
+  @p $EditSuffixeBoDTopic.Font.Color = clBlack
+  @s $BoDTopicDefaultSuffixe = $prop($EditSuffixeBoDTopic.Text)
+EndAlias
+
+Alias BODTOPICCHANGECHECK
+  if [$prop($CheckBoxBoDTopic.Checked)]==[True]
+     @p $EditSuffixeBoDTopic.Font.Color = clBlack
+     @s $BoDTopicDefaultChecked=True
+  else
+     @p $EditSuffixeBoDTopic.Font.Color = clGray
+     @s $BoDTopicDefaultChecked=False
+  endif
+EndAlias
+
+Alias BODTOPICSUPPRIMER
+  $StringListBoDTopic.Delete $prop($ListBoxBoDTopic.ItemIndex)
+  @p $ListBoxBoDTopic.Items = $StringListBoDTopic
+  $StringListBoDTopic.SaveToAlias BoDTopicListeTopics
+  @p $BitBtnSupprimerBoDTopic.Enabled = False
+EndAlias
+
+Alias BODTOPICCHANGETOPIC
+  if [$prop($EditTopicBoDTopic.Text)]==[]
+     @p $BitBtnSetBoDTopic.Enabled = False
+  else
+     @p $BitBtnSetBoDTopic.Enabled = True
+  endif
+EndAlias
+
+Alias BODTOPICRANDOM
+  @p $ListBoxBoDTopic.ItemIndex = $rand2($prop($StringListBoDTopic.Count))
+  BoDTopicSelect
+EndAlias
+
+@s $BoDTopicDefaultSuffixe=     -     http://bod.c3dric.com
+@s $BoDTopicDefaultChecked=False
+@l $smiley=:)
+$messagedlg(64 Bravo ! Vous venez d'installer un BoD-Script $smiley           bod@c3dric.com)
+$messagedlg(64 Pour lancer BoDTopic v1.02, appuyez sur Ctrl-T ou faites /ttopic (oui, avec deux T))

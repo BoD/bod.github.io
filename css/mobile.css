@@ -1,0 +1,14 @@
+body {
+	font-size: 13pt;
+}
+
+#main {
+	width: inherit;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+
+#nav a {
+	font-size: 1.1em;
+}

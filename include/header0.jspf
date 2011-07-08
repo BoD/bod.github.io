@@ -1,0 +1,19 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta content='width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;' name='viewport' />
+<title>JRAF.org, BoD's personal web site</title>
+<% String R = application.getContextPath(); %>
+<link rel="shortcut icon" href="<%= R %>/favicon.ico"/>
+<link href="http://yui.yahooapis.com/3.3.0/build/cssreset/reset-min.css" rel="stylesheet" type="text/css"/>
+<link href="http://fonts.googleapis.com/css?family=VT323" rel="stylesheet" type="text/css"/>
+<link href="<%= R %>/css/main.css" rel="stylesheet" type="text/css"/>
+<%
+	String ua = request.getHeader("User-Agent").toLowerCase();
+	if (ua.contains("android") || ua.contains("iphone") || ua.contains("ipad") || ua.contains("ipod")) {
+%>
+<link href="<%= R %>/css/mobile.css" rel="stylesheet" type="text/css"/>
+<%
+	}
+%>

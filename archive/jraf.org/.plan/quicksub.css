@@ -1,0 +1,62 @@
+/* quickSub Style Sheet */
+/* www.methodize.org/quicksub/ */
+
+#quickSub {
+  position: absolute;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  border: solid #ff8000 1px;
+  visibility: hidden;
+  z-index: 1000;
+  /*width: 160px;*/
+}
+
+/* header - contains title and window closer ([x])  */
+#quickSub .qsheader {
+/*  background-color: #006699;
+  color: #FFFFFF;
+  font: bold 7pt verdana;
+  padding: 2px 2px 2px 3px;
+  border-bottom: 1px solid #000066;*/
+
+	font-weight: bold;
+	background: #ff8000;
+	background-image: url("../index/img/box-title-bg.jpg");
+	background-repeat: repeat;
+	color: white;
+	font-size: 10px;
+	padding: 2px 2px 3px 2px;
+	white-space: nowrap;
+}
+
+#quickSub .qsheader a {
+  margin-left: 3px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+/* content - contains aggregator and newsreader links */
+#quickSub .qscontent {
+	font-size: 9px;
+  background-color: white;
+  color: black;
+	padding: 2px 2px 2px 2px;
+}
+
+#quickSub a {
+	color: green;
+  font-size: 9px;
+}
+
+#quickSub a:hover {
+	color: black;
+	background: #f6f6f6;
+}
+
+
+/* footerWhat - contains 'What Is This?' link */
+#quickSub .qsfooterWhat {
+	font-size: 9px;
+	padding: 0px 2px 2px 2px;
+	background-color: white;
+	text-align: right;
+}

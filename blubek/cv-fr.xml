@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?><!-- ééééééééééééééééééé -->
+<cv>
+	<meta>
+		<last-modification>2011-01-08</last-modification>
+		<translation>
+			<phone>Tél : </phone>
+			<email>Email : </email>
+			<web>Web : </web>
+			<experience>EXPERIENCE</experience>
+			<now>actuellement</now>
+			<skills>COMPETENCES</skills>
+			<environment>Environnement :</environment>
+			<education>FORMATION</education>
+			<misc>LOISIRS</misc>
+		</translation>
+	</meta>
+	<head>
+		<document-title>Curriculum Vitae Benoît Lubek</document-title>
+		<contact>
+			<first-name>Benoît</first-name>
+			<last-name>Lubek</last-name>
+			<address>
+				<line>19 avenue de Choisy</line>
+				<line>75013 Paris</line>
+			</address>
+			<phone>06 07 17 00 95</phone>
+			<email>blubek@jraf.org</email>
+			<web>jraf.org/blubek</web>
+			<birth>27/04/1978</birth>
+			<!--
+			<age>32</age>
+			<nationality>française</nationality>
+			<marital-situation>célibataire</marital-situation>
+			-->
+			<other>32 ans, nationalité française, célibataire.</other>
+			<!--other>Titulaire du permis de conduire.</other-->
+			<!--other>Situation militaire : sursitaire.</other-->
+		</contact>
+		<title>Ingénieur Développement</title>
+	</head>
+	<experience>
+		<period from="Juin 2008" to="NOW">
+			<item><a xmlns="http://www.w3.org/1999/xhtml" href="http://www.voxmobili.com/" target="_blank">Vox Mobili</a>, éditeur de logiciels à Paris.</item>
+			<item>Développement Android sur l'application Phonebook 2.0 (carnet d'adresses synchronisé et social).</item>
+			<item>Conception et réalisation d'un moteur générique s'intégrant avec divers réseaux sociaux (Twitter, Facebook, LinkedIn, MySpace, ...) et encadrement de développeurs réalisant des connecteurs pour ce moteur.</item>
+			<item>Fonctionalités de présence / chat avec le protocole RCS.</item>
+			<item>Développement côté serveur sur le produit PIM (carnet d'adresses, calendrier, tâches, photos / vidéos, etc. synchronisés).</item>
+			<item>Customisations pour les clients : T-Mobile, Bouygues Telecom, Orange, Telstra.</item>
+			<environment>Android, Java, J2EE (JSP/Servlets/Taglibs), Tiles, Javascript, Ajax, JSON, SOAP, Axis, LDAP, SyncML, Oracle, Tomcat, Subversion, Eclipse.</environment>
+		</period>
+		<period from="Jan. 2006" to="Mai 2008">
+			<item><a xmlns="http://www.w3.org/1999/xhtml" href="http://www.oalia.com/" target="_blank">Oalia</a>, éditeur de logiciels à Suresnes.</item>
+			<item>Maintenance et évolutions sur le Framework interne.</item>
+			<item>Développement sur les produits OSRM / OSPM v3 et v4 (progiciels de gestion d’achats).</item>
+			<item>Conception et développement du module Portail Fournisseur (application distante communiquant en Web Services).</item>
+			<environment>Java, J2EE, Hibernate, Turbine, Velocity, Ajax, SOAP, Axis, Oracle, Tomcat, Weblogic, Subversion, Maven, Eclipse.</environment>
+		</period>
+		<period from="Nov. 2003" to="Déc. 2005">
+			<item><a xmlns="http://www.w3.org/1999/xhtml" href="http://www.pegasis.fr/" target="_blank">Pegasis</a>, SSII et éditeur de logiciels à Paris.</item>
+			<item>Développement d'applications Web (internet/intranet) pour les clients : France Télécom, l'Apec, Casino, Le Mémorial de la Shoah, Planète TP.</item>
+			<item>Utilisation du framework interne Pegasis (Modèle MVC2) et de l'outil de gestion de contenu Délia.</item>
+			<environment>Java, J2EE (JSP/Servlets/Taglibs), Tiles, SQL, Oracle, CVS, Tomcat, Ant, IntelliJ, Eclipse.</environment>
+		</period>
+		<period from="Sep. 2001" to="Août 2003">
+			<item><a xmlns="http://www.w3.org/1999/xhtml" href="http://www.quotium.com/" target="_blank">Icom Informatique</a>, éditeur de logiciels à Charenton.
+			</item>
+			<item>Développement sur les produits et composants (connectivité et revamping d’applications mainframes).</item>
+			<item>Conception et réalisation du module d'administration côté client du produit WMA Open Server.</item>
+			<item>Portage en Java d'un langage de scripting propriétaire.</item>
+			<environment>Java, JSP/Servlets, Applets, Swing, Java web start, JavaCC, XML, LDAP, SSL, Visual SourceSafe, Ant, IntelliJ.</environment>
+		</period>
+		<period from="Jan. 2001" to="Juil. 2001">
+			<item><a xmlns="http://www.w3.org/1999/xhtml" href="http://www.sqli.fr/" target="_blank">Aston</a>, SSII à Vélizy.</item>
+			<item>Stage de fin d'études de 6 mois chez <a xmlns="http://www.w3.org/1999/xhtml" href="http://www.accor-services.com/" target="_blank">Accor Services</a> : étude et évaluation des systèmes ouverts pour cartes à puces et réalisation de prototypes.</item>
+			<environment>Java, JavaCard, OpenCard Platform, Rational Rose, JBuilder, Gemplus GemXPresso.</environment>
+		</period>
+	</experience>
+
+	<skills>
+		<category name="Programmation">
+			<item>Maîtrise du langage Java.</item>
+			<item>Très bonne connaissance de la plateforme Android.</item>
+			<item>Bonne connaissance des langages C++, C, C#, Ada, Pascal.</item>
+			<item>Environnements Eclipse, IntelliJ.</item>
+			<item>Autres connaissances : Shell, Perl, TCL, assembleur.</item>
+		</category>
+		<category name="Web">
+			<item>Très bonne connaissance de HTML, CSS, Javascript, XML, XSL/T, Ajax.</item>
+			<item>Frameworks: JSP/Servlets, Struts, Turbine.</item>
+			<item>Autres connaissances : Applets, Velocity, FreeMarker, PHP, Flash.</item>
+		</category>
+		<category name="Bases de données">
+			<item>Langage SQL ; Oracle, MySQL et DB2.</item>
+			<item>JPA, Hibernate, JDBC.</item>
+		</category>
+		<category name="Méthodologies">
+			<item>UML ; Rational Rose, Power Designer.</item>
+		</category>
+		<category name="Systèmes d'exploitation">
+			<item>Bonne connaissance de Linux / Unix ; Windows ; DOS.</item>
+		</category>
+		<category name="Anglais">
+			<item>Courant écrit et oral.</item>
+		</category>
+	</skills>
+
+	<education>
+		<!--period from="1999" to="NOW"-->
+		<period from="2005">
+			<item>Formation .NET et C# agréée Microsoft (MS-2349, une semaine).</item>
+		</period>
+		<period from="1998" to="2001">
+			<item>Ingénierie informatique à l'<a xmlns="http://www.w3.org/1999/xhtml" href="http://www.epita.fr/" target="_blank">EPITA</a> (Ecole Pour l'Informatique et les Techniques Avancées), Paris.</item>
+			<item>Spécialité
+				<a xmlns="http://www.w3.org/1999/xhtml" href="http://sigl.epita.fr/" target="_blank">Systèmes d'Information / Génie Logiciel</a>.
+			</item>
+			<item>Projet de fin d'année réalisé en équipe : système de gestion de documentation projet (Workflow), environnement Visual J++.</item>
+		</period>
+		<period from="1996" to="1998">
+			<item>Diplôme Universitaire Technologique informatique, option Génie Informatique, à l'<a xmlns="http://www.w3.org/1999/xhtml" href="http://www.uvsq.fr/" target="_blank">I.U.T. de Vélizy</a>.
+			</item>
+			<item>Projet de fin de cycle réalisé en équipe : portage sous Windows 9x/NT d'un logiciel pédagogique (environnement Delphi).</item>
+		</period>
+		<period from="1996">
+			<item>Baccalauréat général, série Scientifique, option Mathématiques.</item>
+		</period>
+	</education>
+
+	<misc>
+		<item>Lectures (science, science-fiction), musique (guitare basse), cinéma, jeux vidéos, roller.</item>
+		<!--item>Webmaster du site web <a href="http://www.sigl.epita.fr/" target="_blank">EPITA SIGL</a>.</item-->
+		<!--item>Traductions de documentations pour le <a xmlns="http://www.w3.org/1999/xhtml" href="http://www.freenetproject.org/" target="_blank">projet Freenet</a>.</item-->
+		<item>Développement d'applications Android (<a xmlns="http://www.w3.org/1999/xhtml" href="http://jraf.org/android/" target="_blank">http://jraf.org/android/</a>).</item>
+	</misc>
+</cv>

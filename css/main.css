@@ -1,0 +1,129 @@
+html {
+	background: #020 url('../img/bg.jpg');
+}
+
+body {
+	font-family: 'VT323', arial, serif;
+	font-size: 14pt;
+	margin: 8px;
+	color: #BFB;
+	text-shadow: 0 0 0.2em #AEA;
+	/*filter: progid:DXImageTransform.Microsoft.Glow(color=#AAEEAA, Strength=1);*/ /* <- IE specific */
+	line-height: 1.0;
+}
+
+hr {
+	color: #040;
+	background-color: #040;
+	height: 1px;
+	border: 0;
+}
+
+pre {
+	font-family: 'VT323', arial, serif;
+	font-size: 14pt;
+}
+
+a {
+	color: white;
+	text-shadow: 0 0 0.2em #EEE;
+	text-decoration: none;
+}
+
+a:hover {
+	background-color: #040;
+	border-radius: 8px / 2px;
+}
+
+#main {
+	width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#logo {
+	margin-bottom: 8px;
+	display: inline-block;
+}
+
+#nav {
+	margin-bottom: 8px;
+}
+
+#nav li {
+	display: inline-block;
+	background-color: #8F8;
+	margin-right: 8px;
+	border-radius: 8px / 2px;
+}
+
+#nav li a:hover,#nav .current {
+	background-color: #CFC;
+	border-radius: 8px / 2px;
+}
+
+#nav li.version {
+	float: right;
+	background-color: transparent;
+	padding: 6px 0px 6px 0px;
+	margin-right: 0px;
+}
+
+#nav a {
+	display: block;
+	color: black;
+	padding: 6px 12px 6px 12px;
+	text-decoration: none;
+	font-size: 1.2em;
+}
+
+#tweets li, #projects div {
+	border: 1px solid #040;
+	margin-top: 8px;
+	margin-bottom: 8px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	background: rgba(255, 255, 255, 0.05);
+	border-radius: 8px / 2px;
+}
+
+#tweets .time {
+	display: inline;
+	color: #709970;
+	text-shadow: 0 0 0.2em #7fb37f;
+	position: inherit;
+	right: 0;
+}
+
+#footer {
+	margin-top: 16px;
+	color: #709970;
+	text-shadow: 0 0 0.2em #7fb37f;
+}
+
+#footer .contact {
+	display: inline-block;
+	float: right;
+}
+
+#projects pre {
+ 	white-space: pre-line;
+ }
+
+h1 {
+	font-size: 1.2em;
+	padding-bottom: 8px;
+	color: lime;
+	text-shadow: 0 0 0.2em rgba(0, 255, 0, 0.75);
+}
+
+#project pre {
+	white-space: pre-line;
+}
+
+h2 {
+	font-size: 1.1em;
+	padding-bottom: 8px;
+	color: lime;
+	text-shadow: 0 0 0.2em rgba(0, 255, 0, 0.75);
+}

@@ -1,0 +1,92 @@
+<html><!-- BoD Land (BoD Home Page v1.31 - http://BoDLand.com -->
+<HTML>
+<HEAD>
+<title>BoD Land (BoD Home Page v1.31) - Java - Ttsb</title>
+<BODY>
+
+<CENTER><APPLET codebase="../../tppjava" tppabs="http://www.aliencow.com:81/~bod/java/" CODE="http://jraf.org/static/archive/www.aliencow.com/~bod/java/Ttsb.class" tppabs="http://www.aliencow.com:81/~bod/java/Ttsb.class" WIDTH="33%" HEIGHT="35"></APPLET></CENTER>
+
+<BR><BR>
+<H1>Les sources :</H1>
+<BR>
+<CODE>
+<PRE>
+import java.applet.Applet;
+import java.awt.Graphics;
+import java.util.GregorianCalendar;
+
+
+public class Ttsb extends Applet implements Runnable
+{
+   int[] nb_jours={0,31,28,31,30,31,30,31,31,30,31,30};
+   String[] semaine={"lundi","mardi","mercredi","jeudi","vendredi","samedi","dimanche"};
+   String[] nomMois={"janvier","février","mars","avril","mai","juin","juillet","août","septembre","octobre","novembre","décembre"};
+
+
+   public void start()
+   {
+      Thread yo=new Thread(this);
+      yo.start();
+   }
+
+   public void run()
+   {
+      while(true)
+      {
+         repaint();
+         try {Thread.sleep(1000);}catch(InterruptedException e){}
+      }
+   }
+
+   String leadingZero(int i)
+   {
+       String s;
+       if(i<10) s="0"+i; else s=""+i;
+       return s;
+   }
+
+   int nbSecondes (int jour,int mois,int annee,int heure,int minute,int seconde)
+   {
+      int dayz=jour-1;
+      for(int i=0;i<=mois-1;i++)dayz+=nb_jours[i];
+      return ((365*2*24*60*60)-((dayz+365*(annee-1998))*24*60*60+heure*60*60+minute*60+seconde));
+   }
+
+   public void paint(Graphics g)
+   {
+      int jour,mois,annee,heure,minute,seconde;
+      GregorianCalendar now=new GregorianCalendar();
+      g.drawString("Nous sommes le "+
+                   semaine[now.DAY_OF_WEEK-1]+
+                   " "+
+                   (jour=now.get(now.DATE))+
+                   " "+
+                   nomMois[(mois=now.get(now.MONTH)+1)-1]+
+                   " "+
+                   (annee=now.get(now.YEAR))+
+                   ". Il est "+
+                   leadingZero(heure=now.get(now.HOUR_OF_DAY))+
+                   ":"+
+                   leadingZero(minute=now.get(now.MINUTE))+
+                   ":"+
+                   leadingZero(seconde=now.get(now.SECOND))+"."
+                   ,0,10);
+      int nbSecondes=nbSecondes(jour,mois,annee,heure,minute,seconde);
+      if(nbSecondes>0)
+      g.drawString("Il reste "+
+                   nbSecondes+
+                   " secondes avant l'an 2000..."
+                   ,0,30);
+      else
+      g.drawString("C'est l'an 2000 ! ! ! ! ! ! !  ...depuis "+
+                   -nbSecondes+
+                   "secondes :)"
+                   ,0,30);
+
+   }
+}
+</PRE>
+</CODE>
+
+</BODY>
+</HTML>
