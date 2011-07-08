@@ -71,7 +71,7 @@
 				<h1>vtail</h1>
 				<pre>
 					vtail, a graphical 'tail -f' like utility, with highlighting capabilities.
-					<a href="https://github.com/BoD-/vtail">Project page</a>.
+					<a href="https://github.com/BoD/vtail">Project page</a>.
 				</pre>
 			</div>
 
