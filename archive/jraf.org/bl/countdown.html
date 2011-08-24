@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- ééééééééééééééééé -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!-- BoD bl v2.10b112-javascript  Public Domain 2003 by BoD inc.  Distribute Freely. -->
+<head>
+<title>Countdown</title>
+<style type="text/css">
+	.seconds
+	{
+		font-size: 30px;
+		color: red;
+	}
+
+	.the-event
+	{
+		font-weight: bold;
+	}
+
+	body
+	{
+		font-family: sans-serif;
+	}
+</style>
+
+<script type="text/JavaScript">
+
+var theDate = new Date();
+var theEvent = "";
+var leftParen = "";
+var rightParen = "";
+parseDate(document.location.toString().substring(document.location.toString().indexOf('?')+1));
+
+
+function parseDate(paramString)
+{
+	if (navigator.userAgent.toLowerCase().indexOf("gecko") != -1 || navigator.userAgent.toLowerCase().indexOf("opera") != -1)
+		var adjustYears = 1900;
+	else
+		var adjustYears = 0;
+
+	var params = paramString.split("-");
+	if (params[0] == "today")
+	{
+		var now = new Date();
+		theDate = new Date(now.getYear()+adjustYears, now.getMonth(), now.getDate(), params[1], params[2], params[3], 0);
+		if (params.length > 4)
+			theEvent = params[4].replace(/\+/g, " ");
+	}
+	else
+	{
+		theDate = new Date(params[0], params[1]-1, params[2], params[3], params[4], params[5], 0);
+		if (params.length > 6)
+			theEvent = params[6].replace(/\+/g, " ");
+	}
+	if (theEvent != "")
+	{
+		leftParen = "&nbsp;(";
+		rightParen = ")";
+	}
+
+}
+
+
+function update()
+{
+	var now = new Date();
+	if (theDate.getTime() > now.getTime())
+	{
+		var countDate = new Date(theDate.getTime()-now.getTime());
+		var before = "before";
+	}
+	else
+	{
+		var countDate = new Date(now.getTime()-theDate.getTime());
+		var before = "since";
+	}
+
+	var years = countDate.getUTCFullYear()-1970;
+	if (years > 1)
+		years = years+" years";
+	else
+		years = years+" year";
+
+	var months = countDate.getUTCMonth();
+	if (months > 1)
+		months = months+" months";
+	else
+		months = months+" month";
+
+	var days = countDate.getUTCDate()-1;
+	if (days > 1)
+		days = days+" days";
+	else
+		days = days+" day";
+
+	var hours = countDate.getUTCHours();
+	if (hours > 1)
+		hours = hours+" hours";
+	else
+		hours = hours+" hour";
+
+	var minutes = countDate.getUTCMinutes();
+	if (minutes > 1)
+		minutes = minutes+" minutes";
+	else
+		minutes = minutes+" minute";
+
+	var seconds = countDate.getUTCSeconds()/*+1*/;
+	if (seconds > 1)
+		var secondsString = "seconds";
+	else
+		var secondsString = "second";
+
+	var milliSeconds = Math.floor(countDate.getUTCMilliseconds()/100);
+
+	var seconds = seconds+"."+milliSeconds+" "+secondsString;
+
+	var totalSeconds = Math.floor(1+countDate.getTime()/1000)-1;
+
+
+
+	document.getElementById("current-time").innerHTML = now.toLocaleString();
+	document.getElementById("full-countdown").innerHTML = years+" "+months+" "+days+" "+hours+" "+minutes+" "+seconds;
+	document.getElementById("seconds").innerHTML = totalSeconds+"."+milliSeconds;
+	document.title = totalSeconds;
+	document.getElementById("date-to-go").innerHTML = before+" "+theDate.toLocaleString();
+	document.getElementById("the-event").innerHTML = theEvent;
+	document.getElementById("left-paren").innerHTML = leftParen;
+	document.getElementById("right-paren").innerHTML = rightParen;
+	window.setTimeout("update()", 100);
+}
+
+
+function go()
+{
+	window.setTimeout('update()', 1);
+}
+
+
+window.onload = go;
+
+
+</script>
+
+</head>
+<body>
+<p>
+Today is <span id="current-time"></span>.<br/>
+<span id="full-countdown"></span><br/>
+<span id="seconds" class="seconds"></span><br/>
+seconds <span id="date-to-go"></span><span id="left-paren"></span><span class="the-event" id="the-event"></span><span id="right-paren"></span>.
+</p>
+</body>
+</html>
