@@ -1,1 +1,1 @@
-<% response.sendRedirect("bl.xml"); %>
+<% response.sendRedirect("bl.xml.html"); %>
