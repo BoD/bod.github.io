@@ -33,7 +33,7 @@
 		</ul>
 
 		<div id="blurb">
-		Hi! I'm BoD, (also known as Beno&#238;t Lubek) and somehow you've reached my personal web site.<br/>
+		Hi! I'm BoD (also known as Beno&#238;t Lubek), and somehow you've reached my personal web site.<br/>
 		I'm a thirty-something old geek.  I've been working on <a href="code">various projects</a>.  You can see my resume <a href="blubek"> here</a>.<br/>
 		You can also have a look at <a href="archive">my old web site</a>.<br/>
 		<br/>
