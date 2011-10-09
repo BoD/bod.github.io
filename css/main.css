@@ -77,7 +77,7 @@ a:hover {
 	font-size: 1.2em;
 }
 
-#tweets li, #projects div {
+#stream li, #projects div {
 	border: 1px solid #040;
 	margin-top: 15px;
 	margin-bottom: 15px;
@@ -87,7 +87,7 @@ a:hover {
 	border-radius: 8px / 2px;
 }
 
-#tweets .time {
+#stream .time {
 	display: inline;
 	color: #709970;
 	text-shadow: 0 0 0.2em #7fb37f;
@@ -95,8 +95,13 @@ a:hover {
 	right: 0;
 }
 
+#stream .text {
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
 #footer {
-	margin-top: 16px;
+	margin-top: 32px;
 	color: #709970;
 	text-shadow: 0 0 0.2em #7fb37f;
 }
