@@ -10,9 +10,10 @@
 			</xsl:comment>
 			<head>
 				<meta http-equiv="Content-Type" content="text/xhtml; charset=utf-8"/>
+				<link href="http://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet" type="text/css"/>
 				<style type="text/css">
 	body {
-		font-family: Sans-Serif;
+		font-family: 'Droid Sans', sans-serif;
 	}
 
 	h1 {
@@ -121,22 +122,21 @@
 								</xsl:for-each>
 						</td>
 						<td align="right">
-							<xsl:value-of select="//meta/translation/phone"/><xsl:value-of select="//contact/phone"/><br/>
-							<xsl:value-of select="//meta/translation/email"/>
-								<a>
-									<xsl:attribute name="href">mailto:
-										<xsl:value-of select="//contact/email"/>
-									</xsl:attribute>
+							<xsl:value-of select="//contact/phone"/><br/>
+							<a>
+								<xsl:attribute name="href">mailto:
 									<xsl:value-of select="//contact/email"/>
-								</a>
-								<br/><xsl:value-of select="//meta/translation/web"/>
-								<a>
-									<xsl:attribute name="href">http://
-										<xsl:value-of select="//contact/web"/>/
-									</xsl:attribute>
-									<xsl:attribute name="target">_blank</xsl:attribute>
-									<xsl:value-of select="//contact/web"/>
-								</a>
+								</xsl:attribute>
+								<xsl:value-of select="//contact/email"/>
+							</a>
+							<br/>
+							<a>
+								<xsl:attribute name="href">http://
+									<xsl:value-of select="//contact/web"/>/
+								</xsl:attribute>
+								<xsl:attribute name="target">_blank</xsl:attribute>
+								<xsl:value-of select="//contact/web"/>
+							</a>
 						</td>
 					</tr>
 				</table>
@@ -153,7 +153,12 @@
 								<xsl:choose>
 									<xsl:when test="position() = 1">
 										<td nowrap="nowrap" valign="baseline" width="8%">
-											<xsl:value-of select="../@from"/>
+											<xsl:choose>
+												<xsl:when test="../@to = 'NOW'"><xsl:value-of select="//meta/translation/now"/>&#160;</xsl:when>
+												<xsl:otherwise>
+													<xsl:value-of select="../@to"/>
+												</xsl:otherwise>
+											</xsl:choose>
 										</td>
 										<td/>
 										<td class="first">
@@ -162,12 +167,7 @@
 									</xsl:when>
 									<xsl:when test="position() = 2">
 										<td nowrap="nowrap" valign="baseline" width="8%">
-											<xsl:choose>
-												<xsl:when test="../@to = 'NOW'"><xsl:value-of select="//meta/translation/now"/>&#160;</xsl:when>
-												<xsl:otherwise>
-													<xsl:value-of select="../@to"/>
-												</xsl:otherwise>
-											</xsl:choose>
+											<xsl:value-of select="../@from"/>
 										</td>
 										<td valign="baseline">&#160;.&#160;</td>
 										<td>
@@ -187,7 +187,7 @@
 						<tr>
 							<td nowrap="nowrap" valign="baseline" width="8%"/>
 							<td/>
-							<td><span class="environment-title"><xsl:value-of select="//meta/translation/environment"/></span>&#160;<span class="environment-values"><xsl:value-of select="environment"/></span></td>
+							<td><span class="environment-title"><xsl:value-of select="//meta/translation/environment"/></span><xsl:value-of select="//meta/translation/colon"/>&#160;<span class="environment-values"><xsl:value-of select="environment"/></span></td>
 						</tr>
 						<tr>
 							<td>&#160;</td>
