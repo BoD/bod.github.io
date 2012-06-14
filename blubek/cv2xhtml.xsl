@@ -10,17 +10,25 @@
 			</xsl:comment>
 			<head>
 				<meta http-equiv="Content-Type" content="text/xhtml; charset=utf-8"/>
-				<link href="http://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet" type="text/css"/>
+				<link href="http://fonts.googleapis.com/css?family=Roboto:regular,medium,thin,light,italic,mediumitalic,thinitalic,lightitalic" rel="stylesheet" type="text/css"/>
 				<style type="text/css">
 	body {
-		font-family: 'Droid Sans', sans-serif;
+		font-family: Roboto, sans-serif;
+		font-weight: 300;
+	}
+
+	#main {
+		width: 800px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 100px;
 	}
 
 	h1 {
 		text-align: center;
 		text-transform: uppercase;
 		text-decoration: underline;
-		font-weight: normal;
+		font-weight: 300;
 		font-size: 170%;
 	}
 
@@ -29,7 +37,7 @@
 		text-transform: uppercase;
 		background-color: #e8e8ff;
 		padding: 4px 4px 4px 4px;
-		font-weight: normal;
+		font-weight: 300;
 		font-size: 150%;
 	}
 
@@ -38,7 +46,7 @@
 	}
 
 	.ident {
-		font-weight: bold;
+		font-weight: 400;
 	}
 
 	.name {
@@ -46,7 +54,7 @@
 	}
 
 	.first {
-		font-weight: bold;
+		font-weight: 400;
 	}
 
 	.environment-title {
@@ -98,6 +106,7 @@
 					</tr>
 				</table>
 				<hr/>
+				<div id="main">
 
 				<table width="100%">
 					<tr>
@@ -263,6 +272,9 @@
 					<xsl:copy-of select="node()"/>
 					<br/>
 				</xsl:for-each>
+
+				</div>
+
 			</body>
 		</html>
 	</xsl:template>
