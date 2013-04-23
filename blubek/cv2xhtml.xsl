@@ -92,16 +92,16 @@
 					</tr>
 					<tr>
 						<td>
-							<a class="jraf-link" href="index.html">English version</a>
+							<a class="jraf-link" href="index.html">English</a>
+							&#160;
+							&#160;
+							<a class="jraf-link" href="benoit-lubek-resume-en.pdf">PDF</a>
 						</td>
 						<td>
-							<a class="jraf-link" href="cv-en.pdf">English version (PDF)</a>
-						</td>
-						<td>
-							<a class="jraf-link" href="cv-fr.html">Version française</a>
-						</td>
-						<td>
-							<a class="jraf-link" href="cv-fr.pdf">Version française (PDF)</a>
+							<a class="jraf-link" href="cv-fr.html">Français</a>
+							&#160;
+							&#160;
+							<a class="jraf-link" href="benoit-lubek-cv-fr.pdf">PDF</a>
 						</td>
 					</tr>
 				</table>
