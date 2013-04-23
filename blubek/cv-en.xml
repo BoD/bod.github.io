@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?><!-- ééééééééééééééééééé -->
 <cv>
 	<meta>
-		<last-modification>2012-06-07</last-modification>
+		<last-modification>2013-04-22</last-modification>
 		<translation>
 			<phone>Phone: </phone>
 			<email>Email: </email>
@@ -27,7 +27,7 @@
 			</address>
 			<phone>+33 1 45 82 40 87</phone>
 			<email>blubek@jraf.org</email>
-			<web>jraf.org/blubek</web>
+			<web>JRAF.org</web>
 			<birth>27/04/1978</birth>
 			<age>34</age>
 			<other>French nationality.</other>
@@ -37,12 +37,22 @@
 		<title>Software Engineer</title>
 	</head>
 	<experience>
-		<period from="Nov. 2011" to="NOW">
+		<period from="Jun. 2012" to="NOW">
+			<item>Freelance (undisclosed customer.)</item>
+			<item>Development on an Android app to help families organize, communicate and share.</item>
+			<item>Strong focus on the UI/UX aspect.</item>
+			<item>Implemented a full-featured calendar with month and next events views.</item>
+			<item>Communication with the REST/JSON API.</item>
+			<item>Customized the software for customers (branding, integration.)</item>
+			<environment>Android, Java, Custom UI components, C2DM/GCM, In-app purchase, Google Analytics, Content Provider, JSON, Git, Jenkins, Eclipse.</environment>
+		</period>
+		
+		<period from="2011" to="2012">
 			<item><a xmlns="http://www.w3.org/1999/xhtml" href="http://www.plizy.com/" target="_blank">Plizy</a>, software publisher, Paris, France.</item>
-			<item>Development of the <a xmlns="http://www.w3.org/1999/xhtml" href="https://play.google.com/store/apps/details?id=com.milestonelab.plizy.android" target="_blank">Plizy app</a> for Android tablets (a video aggregator / player.)</item>
+			<item>Development of the <a xmlns="http://www.w3.org/1999/xhtml" href="http://www.droid-life.com/2012/02/23/plizy-released-for-android-tablets-videos-from-all-over-the-web-in-one-convenient-location/" target="_blank">Plizy app</a> for Android tablets (a video aggregator / player.)</item>
 			<item>Started from scratch and was responsible for the project from the inception to the publication on the Play Store.</item>
-			<item>Communication with the Plizy back-end in JSON.</item>
-			<item>Developed a video player using a VideoView or a WebView depending on the provider (YouTube, Vimeo, &#x2026;)</item>
+			<item>Communication with the REST/JSON API.</item>
+			<item>Developed a video player using a VideoView or a WebView depending on the provider (YouTube, Vimeo, Dailymotion, &#x2026;)</item>
 			<item>Designed and implemented an image caching mechanism for the thumbnails.</item>
 			<environment>Android, Java, Animations, VideoView, WebView, Content Provider, Facebook, Twitter, JSON, Git, Jenkins, Eclipse.</environment>
 		</period>
@@ -75,9 +85,11 @@
 		<period from="2001" to="2003">
 			<item><a xmlns="http://www.w3.org/1999/xhtml" href="http://www.quotium.com/" target="_blank">Icom Informatique</a>, software publisher, Charenton, France.
 			</item>
-			<item>Development on products and components (connectivity and revamping of mainframe applications.)</item>
+			<item>Development on the web and Swing applications.</item>
+			<!--
 			<item>Designed and developed a client side administration module for the WMA Open Server product.</item>
-			<item>Ported a proprietary scripting language to Java.</item>
+			-->
+			<item>Ported a scripting language interpreter to Java.</item>
 			<environment>Java, JSP/Servlets, Applets, Swing, Java web start, JavaCC, XML, LDAP, SSL, Visual SourceSafe, Ant, IntelliJ.</environment>
 		</period>
 <!--
@@ -91,9 +103,9 @@
 
 	<skills>
 		<category name="Development">
-			<item>Excellent knowledge of the Java language.</item>
 			<item>Excellent knowledge of the Android platform.</item>
-			<item>Knowledge of C++, C, C# languages.</item>
+			<item>Excellent knowledge of the Java language.</item>
+			<item>Knowledge of the C++, C, C# languages.</item>
 			<item>Eclipse and IntelliJ environments.</item>
 			<item>Other skills: Shell, Perl, TCL, Pascal, Ada, assembly language.</item>
 		</category>
@@ -146,6 +158,6 @@
 
 	<misc>
 		<item>Reading (science, science-fiction), music (bass guitar), cinema, roller-blading, geocaching.</item>
-		<item>Android application development (<a xmlns="http://www.w3.org/1999/xhtml" href="http://jraf.org/android/" target="_blank">http://jraf.org/android/</a>).</item>
+		<item>Android application development (<a xmlns="http://www.w3.org/1999/xhtml" href="http://jraf.org/android/" target="_blank">JRAF.org/android/</a>).</item>
 	</misc>
 </cv>
