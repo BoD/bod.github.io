@@ -1,14 +1,50 @@
-body {
+html, body, .helper {
+	height: inherit;
+	padding: inherit;
+	text-align: inherit;
 	font-size: 13pt;
+}
+
+.helper, #main {
+	display: inherit;
+	vertical-align: inherit;
+	text-align: inherit;
 }
 
 #main {
 	width: inherit;
-	margin-left: 0;
-	margin-right: 0;
+	margin-left: inherit;
+	margin-right: inherit;
 }
 
-
-#nav a {
-	font-size: 1.1em;
+.icon {
+	width: 96px;
+	height: 96px;
 }
+
+.icon div {
+	background-size: 96px 96px;
+	width: 96px;
+	height: 96px;
+}
+
+.github {
+	background-image: url('../img/github.png');
+}
+
+.playstore {
+	background-image: url('../img/playstore.png');
+}
+
+.resume {
+	background-image: url('../img/resume.png');
+}
+
+.stackoverflow {
+	background-image: url('../img/stackoverflow.png');
+}
+
+.gplus {
+	background-image: url('../img/gplus.png');
+}
+
