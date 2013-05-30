@@ -44,7 +44,7 @@
 			<item>Implemented a full-featured calendar with month and next events views.</item>
 			<item>Communication with the REST/JSON API.</item>
 			<item>Customized the software for customers (branding, integration.)</item>
-			<environment>Android, Java, Custom UI components, C2DM/GCM, In-app purchase, Google Analytics, Content Provider, JSON, Git, Jenkins, Eclipse.</environment>
+			<environment>Android, Java, Custom UI components, C2DM/GCM, In-app purchase, Maps API, Google Analytics, Content Provider, JSON, Git, Jenkins, Eclipse.</environment>
 		</period>
 		
 		<period from="2011" to="2012">
