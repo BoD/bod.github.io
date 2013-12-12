@@ -51,7 +51,7 @@
 		</period>
 		
 		<period from="2011" to="2012">
-			<item><a xmlns="http://www.w3.org/1999/xhtml" href="http://www.plizy.com/" target="_blank">Plizy</a>, éditeur de logiciels à Paris.</item>
+			<item>Plizy, éditeur de logiciels à Paris.</item>
 			<item>Développement de l'application <a xmlns="http://www.w3.org/1999/xhtml" href="http://www.droid-life.com/2012/02/23/plizy-released-for-android-tablets-videos-from-all-over-the-web-in-one-convenient-location/" target="_blank">Plizy</a> pour tablettes Android (agrégateur personalisé et player vidéo).</item>
 			<item>Mise en place et responsabilité du projet de la création jusqu'à la publication sur le Play Store.</item>
 			<item>Communication avec l'API REST/JSON.</item>

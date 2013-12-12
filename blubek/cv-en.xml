@@ -48,7 +48,7 @@
 		</period>
 		
 		<period from="2011" to="2012">
-			<item><a xmlns="http://www.w3.org/1999/xhtml" href="http://www.plizy.com/" target="_blank">Plizy</a>, software publisher, Paris, France.</item>
+			<item>Plizy, software publisher, Paris, France.</item>
 			<item>Development of the <a xmlns="http://www.w3.org/1999/xhtml" href="http://www.droid-life.com/2012/02/23/plizy-released-for-android-tablets-videos-from-all-over-the-web-in-one-convenient-location/" target="_blank">Plizy app</a> for Android tablets (a video aggregator / player.)</item>
 			<item>Started from scratch and was responsible for the project from the inception to the publication on the Play Store.</item>
 			<item>Communication with the REST/JSON API.</item>
