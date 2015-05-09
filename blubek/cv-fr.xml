@@ -47,7 +47,7 @@
 			<item>Réalisation d'un calendrier complet avec vues "mois" et "prochains évènements".</item>
 			<item>Communication avec l'API REST/JSON.</item>
 			<item>Customisations pour les clients (branding, intégration).</item>
-			<environment>Android, Java, Composants UI custom, C2DM/GCM, In-app purchase, Maps API, Google Analytics, Content Provider, JSON, Git, Jenkins, Eclipse.</environment>
+			<environment>Android, Java, Composants UI custom, C2DM/GCM, In-app purchase, Maps API, Google Play Services, Content Provider, JSON, Git, Jenkins, Android Studio, Gradle.</environment>
 		</period>
 		
 		<period from="2011" to="2012">
