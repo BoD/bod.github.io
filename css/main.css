@@ -135,6 +135,14 @@ a:hover {
 }
 
 
+.twitter {
+	background-image: url('../img/twitter_green.png');
+}
+
+.twitter:hover {
+	background-image: url('../img/twitter.png');
+}
+
 hr {
 	color: #040;
 	background-color: #040;
