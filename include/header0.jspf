@@ -6,8 +6,8 @@
 <title>JRAF.org, BoD's personal web site</title>
 <% String R = application.getContextPath(); %>
 <link rel="shortcut icon" href="<%= R %>/favicon.ico"/>
-<link href="http://yui.yahooapis.com/3.3.0/build/cssreset/reset-min.css" rel="stylesheet" type="text/css"/>
-<link href="http://fonts.googleapis.com/css?family=VT323" rel="stylesheet" type="text/css"/>
+<link href="<%= R %>/css/reset-min.css" rel="stylesheet" type="text/css"/>
+<link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet" type="text/css"/>
 <link href="<%= R %>/css/main.css" rel="stylesheet" type="text/css"/>
 <%
 	String ua = request.getHeader("User-Agent").toLowerCase();
