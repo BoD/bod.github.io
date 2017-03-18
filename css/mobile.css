@@ -2,7 +2,11 @@ html, body, .helper {
 	height: inherit;
 	padding: inherit;
 	text-align: inherit;
-	font-size: 13pt;
+	font-size: 12pt;
+}
+
+pre {
+	font-size: 12pt;
 }
 
 .helper, #main {
