@@ -1,12 +1,17 @@
+@font-face {
+  font-family: term;
+  src: url("../fonts/term.ttf") format("truetype");
+}
+
 html {
 	background: #000;
 }
 
 body {
-	font-family: 'VT323', 'fixedsys', 'Courier', monospace;
-	font-size: 14pt;
+	font-family: 'term', 'VT323', 'fixedsys', 'Courier', monospace;
+	font-size: 16pt;
 	color: #BFB;
-	text-shadow: 0 0 0.2em #AEA;
+	text-shadow: 0 0 0.4em #AEA;
 	line-height: 1.0;
 }
 
@@ -32,13 +37,13 @@ html, body, .helper {
 }
 
 pre {
-	font-family: 'VT323', 'fixedsys', 'Courier', monospace;
-	font-size: 14pt;
+	font-family: 'term', 'VT323', 'fixedsys', 'Courier', monospace;
+	font-size: 16pt;
 }
 
 a {
 	color: white;
-	text-shadow: 0 0 0.2em #EEE;
+	text-shadow: 0 0 0.4em #EEE;
 	text-decoration: none;
 
 	-webkit-transition: background-color .25s ease-in-out;
