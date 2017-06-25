@@ -1,0 +1,9 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "org.jraf.android.jraforg",
+    "sha256_cert_fingerprints":
+    ["4D:43:2D:3F:23:6B:25:26:6F:7A:86:0C:06:58:B4:9F:00:E0:40:62:0A:22:03:68:68:87:54:42:DE:04:D2:E0"]
+  }
+}]
