@@ -40,14 +40,27 @@
 		<title>Ingénieur Logiciel</title>
 	</head>
 	<experience>
-		<period from="Sep. 2016" to="NOW">
-			<item>Développeur Android (société non divulguée).</item>
-			<item>Développement sur une application permettant de parcourir et jouer du contenu vidéo !</item>
-			<environment>Android, Kotlin, Java, Content Provider, JSON, Git, Gitlab, Android Studio, Gradle.</environment>
+		<period from="Mar. 2017" to="NOW">
+			<item>Développeur Android chez <a xmlns="http://www.w3.org/1999/xhtml" href="https://www.less.com/" target="_blank">LESS</a> <span xmlns="http://www.w3.org/1999/xhtml" class="company-details">(maintenant <a xmlns="http://www.w3.org/1999/xhtml" href="https://www.blablacar.com/" target="_blank">BlaBlaCar</a>, éditeur de logiciels à Paris)</span></item>
+			<item>Development de l'application <a xmlns="http://www.w3.org/1999/xhtml" href="https://play.google.com/store/apps/details?id=com.less.line" target="_blank">LESS</a>, un service de covoiturage urbain instantané.</item>
+			<item>Responsabilité du projet avec un autre développeur, de la mise en place jusqu'à la publication sur le Play Store puis sur la maintenance / nouvelles fonctionalités.</item>
+			<item>Mise en place d'une architecture MVVM utilisant Arch components.</item>
+			<item>Implémentation d'un GPS / système de navigation <i xmlns="http://www.w3.org/1999/xhtml">turn by turn</i> (y compris instructions vocales).</item>
+			<item>Aspect très important de la communication temps réelle (PubNub, FCM).</item>
+			<environment>Android, Java, Arch components (ViewModel, Room), RxJava, Databinding, Dagger, Firebase, Mapbox, PubNub, FCM, JSON, Git, Github, Android Studio, Gradle.</environment>
+		</period>
+
+		<period from="2016" to="2017">
+			<item>Développeur Android chez <a xmlns="http://www.w3.org/1999/xhtml" href="https://www.blackpills.com/" target="_blank">Blackpills</a> <span xmlns="http://www.w3.org/1999/xhtml" class="company-details">(société de médias à Paris)</span></item>
+			<item>Développement de l'application <a xmlns="http://www.w3.org/1999/xhtml" href="https://play.google.com/store/apps/details?id=com.blackpills" target="_blank">Blackpills</a>, permettant de parcourir et visionner des mini series originales à consommer sur mobile.</item>
+			<item>Démarrage du projet avec 2 autres développeurs (100% Kotlin).</item>
+			<item>Aspect UI/UX très important.</item>
+			<item>Mise en place du paiement, publicité, mode hors ligne (téléchargement de videos), et plus.</item>
+			<environment>Android, Kotlin, ExoPlayer, HLS, Swagger, JSON, Git, Gitlab, Android Studio, Gradle.</environment>
 		</period>
 
 		<period from="2012" to="2016">
-			<item>Lead Développeur Android chez <a xmlns="http://www.w3.org/1999/xhtml" href="https://www.familywall.com/index.html?noautologin" target="_blank">Family And Co.</a> (éditeur de logiciels à Paris - en freelance).</item>
+			<item>Lead Développeur Android chez <a xmlns="http://www.w3.org/1999/xhtml" href="https://www.familywall.com/index.html?noautologin" target="_blank">Family And Co.</a> <span xmlns="http://www.w3.org/1999/xhtml" class="company-details">(éditeur de logiciels à Paris - en freelance)</span></item>
 			<item>Développement sur l'application <a xmlns="http://www.w3.org/1999/xhtml" href="https://play.google.com/store/apps/details?id=com.familywall" target="_blank">FamilyWall</a> qui aide à s'organiser, communiquer et partager en famille.</item>
 			<item>Aspect UI/UX très important.</item>
 			<item>Réalisation d'un calendrier complet avec vues "mois" et "prochains évènements".</item>
@@ -57,8 +70,8 @@
 		</period>
 
 		<period from="2011" to="2012">
-			<item>Lead Développeur Android chez Plizy (éditeur de logiciels à Paris).</item>
-			<item>Développement de l'application <a xmlns="http://www.w3.org/1999/xhtml" href="http://www.droid-life.com/2012/02/23/plizy-released-for-android-tablets-videos-from-all-over-the-web-in-one-convenient-location/" target="_blank">Plizy</a> pour tablettes (agrégateur personalisé et player vidéo).</item>
+			<item>Lead Développeur Android chez Plizy <span xmlns="http://www.w3.org/1999/xhtml" class="company-details">(éditeur de logiciels à Paris)</span></item>
+			<item>Développement de l'application <a xmlns="http://www.w3.org/1999/xhtml" href="http://www.droid-life.com/2012/02/23/plizy-released-for-android-tablets-videos-from-all-over-the-web-in-one-convenient-location/" target="_blank">Plizy</a> pour tablettes, un agrégateur personalisé et player vidéo.</item>
 			<item>Mise en place et responsabilité du projet de la création jusqu'à la publication sur le Play Store.</item>
 			<item>Communication avec l'API REST/JSON.</item>
 			<item>Player vidéo utilisant une VideoView ou une WebView selon le provider (YouTube, Vimeo, Dailymotion, &#x2026;).</item>
@@ -67,8 +80,8 @@
 		</period>
 
 		<period from="2008" to="2011">
-			<item>Développeur Android et Backend chez <a xmlns="http://www.w3.org/1999/xhtml" href="http://www.voxmobili.com/" target="_blank">Vox Mobili</a> (éditeur de logiciels à Paris).</item>
-			<item>Développement sur l'application <a xmlns="http://www.w3.org/1999/xhtml" href="https://play.google.com/store/apps/details?id=com.voxmobili.phonebook2" target="_blank">Phonebook 2.0</a> pour Android (carnet d'adresses synchronisé et social).</item>
+			<item>Développeur Android et Backend chez <a xmlns="http://www.w3.org/1999/xhtml" href="http://www.voxmobili.com/" target="_blank">Vox Mobili</a> <span xmlns="http://www.w3.org/1999/xhtml" class="company-details">(éditeur de logiciels à Paris)</span></item>
+			<item>Développement sur l'application <a xmlns="http://www.w3.org/1999/xhtml" href="https://play.google.com/store/apps/details?id=com.voxmobili.phonebook2" target="_blank">Phonebook 2.0</a> pour Android, un carnet d'adresses synchronisé et social.</item>
 			<item>Conception et réalisation d'un moteur générique s'intégrant avec divers réseaux sociaux (Twitter, Facebook, LinkedIn, MySpace, &#x2026;) et encadrement de développeurs réalisant des connecteurs pour ce moteur.</item>
 			<item>Fonctionalités de présence / chat avec le protocole RCS.</item>
 			<item>Développement côté serveur sur le produit PIM (carnet d'adresses, calendrier, tâches, photos / vidéos, etc. synchronisés).</item>
@@ -76,20 +89,20 @@
 			<environment>Android, Java, J2EE, Javascript, Ajax, JSON, SOAP, SyncML, Oracle, Tomcat, Subversion, Eclipse.</environment>
 		</period>
 		<period from="2006" to="2008">
-			<item>Développeur Java chez <a xmlns="http://www.w3.org/1999/xhtml" href="http://www.oalia.com/" target="_blank">Oalia</a> (éditeur de logiciels à Suresnes).</item>
+			<item>Développeur Java chez <a xmlns="http://www.w3.org/1999/xhtml" href="http://www.oalia.com/" target="_blank">Oalia</a> <span xmlns="http://www.w3.org/1999/xhtml" class="company-details">(éditeur de logiciels à Suresnes)</span></item>
 			<item>Maintenance et évolutions sur le Framework interne.</item>
-			<item>Développement sur les produits OSRM / OSPM v3 et v4 (progiciels de gestion d’achats).</item>
+			<item>Développement sur les produits OSRM / OSPM v3 et v4, des progiciels de gestion d’achats.</item>
 			<item>Conception et développement du module Portail Fournisseur (application distante communiquant en Web Services).</item>
 			<environment>Java, J2EE, Hibernate, Turbine, Velocity, Ajax, SOAP, Axis, Oracle, Tomcat, Weblogic, Subversion, Maven, Eclipse.</environment>
 		</period>
 		<period from="2003" to="2006">
-			<item>Développeur Java chez <a xmlns="http://www.w3.org/1999/xhtml" href="http://www.pegasis.fr/" target="_blank">Pegasis</a> (SSII et éditeur de logiciels à Paris).</item>
+			<item>Développeur Java chez <a xmlns="http://www.w3.org/1999/xhtml" href="http://www.pegasis.fr/" target="_blank">Pegasis</a> <span xmlns="http://www.w3.org/1999/xhtml" class="company-details">(SSII et éditeur de logiciels à Paris)</span></item>
 			<item>Développement d'applications Web (internet/intranet) pour les clients : France Télécom, l'Apec, Casino, Le Mémorial de la Shoah, Planète TP.</item>
 			<item>Utilisation du framework interne Pegasis (Modèle MVC2) et de l'outil de gestion de contenu Délia.</item>
 			<environment>Java, J2EE (JSP/Servlets/Taglibs), Tiles, SQL, Oracle, CVS, Tomcat, Ant, IntelliJ, Eclipse.</environment>
 		</period>
 		<period from="2001" to="2003">
-			<item>Développeur Java chez <a xmlns="http://www.w3.org/1999/xhtml" href="http://www.quotium.com/" target="_blank">Icom Informatique</a> (éditeur de logiciels à Charenton).</item>
+			<item>Développeur Java chez <a xmlns="http://www.w3.org/1999/xhtml" href="http://www.quotium.com/" target="_blank">Icom Informatique</a> <span xmlns="http://www.w3.org/1999/xhtml" class="company-details">(éditeur de logiciels à Charenton)</span></item>
 			<item>Développement sur les applications web et Swing.</item>
 			<item>Portage en Java d'un interpreteur d'un langage de scripting.</item>
 			<environment>Java, JSP/Servlets, Applets, Swing, Java web start, JavaCC, XML, LDAP, SSL, Visual SourceSafe, Ant, IntelliJ.</environment>

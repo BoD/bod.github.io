@@ -11,6 +11,7 @@
 			<head>
 				<meta http-equiv="Content-Type" content="text/xhtml; charset=utf-8"/>
 				<link href="https://fonts.googleapis.com/css?family=Roboto:regular,medium,thin,light,italic,mediumitalic,thinitalic,lightitalic" rel="stylesheet" type="text/css"/>
+				<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet" type="text/css"/>
 				<style type="text/css">
 	body {
 		font-family: Roboto, sans-serif;
@@ -65,6 +66,10 @@
 		font-style: italic;
 	}
 
+	.company-details {
+		font-family: 'Roboto Condensed', sans-serif;
+		color: #B0B0B0;
+	}
 
 	.jraf-link {
 		font-family: Verdana, Helvetica, Arial, sans-serif;
@@ -220,7 +225,7 @@
 									<xsl:if test="position() = 1">
 										<u>
 											<xsl:value-of select="../@name"/>
-										</u> :
+										</u><xsl:value-of select="//meta/translation/colon"/>&#160;
 									</xsl:if>
 								</td>
 								<td>
