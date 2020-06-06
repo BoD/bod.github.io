@@ -16,6 +16,10 @@
 
 <script src="js/logo.js"></script>
 <script>
+	if (location.protocol === 'http:') {
+		location.replace(`https:${location.href.substring(location.protocol.length)}`);
+	}
+
 	window.onload = startLogoAnimation;
 </script>
 
