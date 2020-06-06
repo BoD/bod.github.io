@@ -12,13 +12,13 @@ var i = 0;
 
 function startLogoAnimation() {
 	logoElt = window.document.getElementById("logo");
-	intervalId = setInterval("anim()", 30);
+	intervalId = setInterval("anim()", 32);
 }
 
 function anim() {
 	var s = logoStr.substring(0, i);
 	var nbLines = s.split("\n").length;
-	s += "#";
+	s += "*#";
 	for (var j = 0; j < 6 - nbLines; j++) {
 		s += "\n";
 	}
@@ -27,7 +27,7 @@ function anim() {
 	i++;
 	if (i == len + 1) {
 		clearInterval(intervalId);
-		s = s.substring(0, s.length - 2);
+		s = s.substring(0, s.length - 3);
 		logoElt.innerHTML = "<pre>" + s + "</pre>";
 	}
 }
