@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?><!-- ééééééééééééééééééé -->
 <cv>
 	<meta>
-		<last-modification>2016-10-31</last-modification>
+		<last-modification>2021-06-12</last-modification>
 		<translation>
 			<phone>Phone: </phone>
 			<email>Email: </email>
@@ -29,7 +29,7 @@
 			<email>blubek@jraf.org</email>
 			<web>JRAF.org</web>
 			<birth>27/04/1978</birth>
-			<age>38</age>
+			<age>43</age>
 			<other>French nationality.</other>
 			<marital-situation>single</marital-situation>
 			<!--other>French driver's licence.</other--><!-- who cares -->
@@ -37,14 +37,22 @@
 		<title>Software Engineer</title>
 	</head>
 	<experience>
-		<period from="Mar. 2017" to="NOW">
+		<period from="Sep. 2018" to="NOW">
+			<item>Android Expert at <a xmlns="http://www.w3.org/1999/xhtml" href="https://qonto.com/" target="_blank">Qonto</a> <span xmlns="http://www.w3.org/1999/xhtml" class="company-details">(neobank, Paris, France)</span></item>
+			<item>New features and maintenance on the <a xmlns="http://www.w3.org/1999/xhtml" href="https://play.google.com/store/apps/details?id=eu.qonto.qonto" target="_blank">Qonto</a> banking app.</item>
+			<item>Strong focus on architecture; core modules and services; keeping the codebase maintainable, clean and modern; team best practices and documentation; newcomer training; tooling; R&amp;D; etc.</item>
+			<item>Team grew from 3 to 10 developers.</item>
+			<environment>Android, Kotlin, MVVM / Clean Architecture, Realm, Databinding, Coroutines, Dagger, JSON, Gitlab, Android Studio, Gradle.</environment>
+		</period>
+		<period from="2017" to="2018">
 			<item>Android Developer at <a xmlns="http://www.w3.org/1999/xhtml" href="https://www.less.com/" target="_blank">LESS</a> <span xmlns="http://www.w3.org/1999/xhtml" class="company-details">(now part of <a xmlns="http://www.w3.org/1999/xhtml" href="https://www.blablacar.com/" target="_blank">BlaBlaCar</a>, software publisher, Paris, France)</span></item>
 			<item>Development of the <a xmlns="http://www.w3.org/1999/xhtml" href="https://play.google.com/store/apps/details?id=com.less.line" target="_blank">LESS</a> app, a peer-to-peer ridesharing service.</item>
 			<item>Started from scratch with another Android developer, and worked from the inception to the publication on the Play Store, and on the maintenance / new features of the app.</item>
 			<item>Setup an MVVM architecture using Arch components.</item>
 			<item>Implemented turn by turn navigation / GPS (incl. voice instructions) features.</item>
 			<item>Strong focus on real time messaging aspects (PubNub, FCM.)</item>
-			<environment>Android, Java, Arch components (ViewModel, Room), RxJava, Databinding, Dagger, Firebase, Mapbox, PubNub, FCM, JSON, Git, Github, Android Studio, Gradle.</environment>
+			<item>At BlaBlaCar: new features and maintenance on the <a xmlns="http://www.w3.org/1999/xhtml" href="https://play.google.com/store/apps/details?id=com.blablalines/" target="_blank">BlaBlaCar Daily</a> app.</item>
+			<environment>Android, Java, Kotlin, Arch components (ViewModel, Room), RxJava, Databinding, Dagger, Firebase, Mapbox, PubNub, FCM, JSON, Github, Android Studio, Gradle.</environment>
 		</period>
 
 		<period from="2016" to="2017">
@@ -53,7 +61,7 @@
 			<item>Started from scratch with 2 other Android developers (full Kotlin).</item>
 			<item>Strong focus on the UI/UX.</item>
 			<item>Worked on payment, ads, offline mode (video download), and more.</item>
-			<environment>Android, Kotlin, ExoPlayer, HLS, Swagger, JSON, Git, Gitlab, Android Studio, Gradle.</environment>
+			<environment>Android, Kotlin, ExoPlayer, HLS, Swagger, JSON, Gitlab, Android Studio, Gradle.</environment>
 		</period>
 
 		<period from="2012" to="2016">
@@ -71,7 +79,7 @@
 			<item>Development of the <a xmlns="http://www.w3.org/1999/xhtml" href="http://www.droid-life.com/2012/02/23/plizy-released-for-android-tablets-videos-from-all-over-the-web-in-one-convenient-location/" target="_blank">Plizy</a> app for tablets, a video aggregator / player.</item>
 			<item>Started from scratch and was responsible for the project from the inception to the publication on the Play Store.</item>
 			<item>Communication with the REST/JSON API.</item>
-			<item>Developed a video player using a VideoView or a WebView depending on the provider (YouTube, Vimeo, Dailymotion, &#x2026;)</item>
+			<item>Developed a video player using a VideoView or a WebView depending on the provider (YouTube, Vimeo, Dailymotion, etc.)</item>
 			<item>Designed and implemented an image caching mechanism for the thumbnails.</item>
 			<environment>Android, Java, Animations, VideoView, WebView, Content Provider, Facebook, Twitter, JSON, Git, Jenkins, Eclipse.</environment>
 		</period>
@@ -121,25 +129,25 @@
 	<skills>
 		<category name="Development">
 			<item>Excellent knowledge of the Android platform.</item>
-			<item>Excellent knowledge of the Java language.</item>
-			<item>Experience with the Kotlin, C++, C, C# languages.</item>
-			<item>Eclipse and IntelliJ environments.</item>
+			<item>Excellent knowledge of the Kotlin and Java languages.</item>
+			<item>Experience with C#, C++, and C.</item>
+			<item>IntelliJ/AS and Eclipse environments.</item>
 			<item>Other skills: Shell, Perl, TCL, Pascal, Ada, assembly language.</item>
 		</category>
-		<category name="Web">
-			<item>Very good knowledge of HTML, CSS, Javascript, XML, XSL/T, Ajax.</item>
-			<item>Frameworks: JSP/Servlets, Struts, Turbine.</item>
-			<item>Other skills: Applets, Velocity, FreeMarker, PHP, Flash.</item>
+		<category name="Server-side and web">
+			<item>Frameworks: KTOR, JSP/Servlets, Struts, Turbine.</item>
+			<item>Very good knowledge of HTML, CSS, Javascript, XML, XSL/T.</item>
+			<item>Other skills: GraphQL, FreeMarker, PHP, Flash, Applets.</item>
 		</category>
 		<category name="Databases">
 			<item>SQL language; Oracle, MySQL and SQLite.</item>
-			<item>JPA, Hibernate, JDBC.</item>
+			<item>JPA, Hibernate, JDBC, Realm.</item>
 		</category>
 		<category name="Concepts">
-			<item>Design Patterns; Client/Server Architecture; UML.</item>
+			<item>Design Patterns; Clean Architecture; UML.</item>
 		</category>
 		<category name="Operating Systems">
-			<item>Good knowledge of Linux / Unix; OSX; Windows.</item>
+			<item>Good knowledge of Linux / Unix; MacOS; Windows.</item>
 		</category>
 		<category name="Languages">
 			<item>English: fluent.</item>
@@ -148,21 +156,15 @@
 	</skills>
 
 	<education>
-		<period from="2005">
-			<item>Microsoft certified .NET and C# training (MS-2349, one week.)</item>
-		</period>
 		<period from="1998" to="2001">
-			<item>Computer science at
-				<a xmlns="http://www.w3.org/1999/xhtml" href="http://www.epita.fr/" target="_blank">EPITA</a> (<span class="italic" xmlns="http://www.w3.org/1999/xhtml">Ecole Pour l'Informatique et les Techniques Avancées</span>), Paris, France.
-			</item>
+			<item>Computer science at <a xmlns="http://www.w3.org/1999/xhtml" href="http://www.epita.fr/" target="_blank">EPITA</a> (<span class="italic" xmlns="http://www.w3.org/1999/xhtml">Ecole Pour l'Informatique et les Techniques Avancées</span>), Paris, France.</item>
 			<item><a xmlns="http://www.w3.org/1999/xhtml" href="http://sigl.epita.fr/" target="_blank">Information Systems / Software Engineering</a> option.</item>
 <!--
 			<item>Team project: project documentation management system (Workflow), Visual J++ environment.</item>
 -->
 		</period>
 		<period from="1996" to="1998">
-			<item>D.U.T. informatique (<span class="italic" xmlns="http://www.w3.org/1999/xhtml">Diplôme Universitaire Technologique</span> in computer science), Software Engineering option, at <a xmlns="http://www.w3.org/1999/xhtml" href="http://www.uvsq.fr/" target="_blank">I.U.T. of Vélizy</a>, France.
-			</item>
+			<item>D.U.T. informatique (<span class="italic" xmlns="http://www.w3.org/1999/xhtml">Diplôme Universitaire Technologique</span> in computer science), Software Engineering option, at <a xmlns="http://www.w3.org/1999/xhtml" href="http://www.uvsq.fr/" target="_blank">I.U.T. of Vélizy</a>, France.</item>
 <!--
 			<item>Final project: ported an educational software package to Windows 9x/NT (Delphi environment.)</item>
 -->
@@ -174,7 +176,7 @@
 	</education>
 
 	<misc>
-		<item>Reading (science, science-fiction), music (bass guitar), cinema, roller-blading, geocaching.</item>
-		<item>Android application development (<a xmlns="http://www.w3.org/1999/xhtml" href="http://jraf.org/android/" target="_blank">JRAF.org/android/</a>).</item>
+		<item>Reading (science, science-fiction), cinema, music (bass guitar), geocaching.</item>
+		<item>A few hobby Android apps (<a xmlns="http://www.w3.org/1999/xhtml" href="https://play.google.com/store/apps/developer?id=BoD" target="_blank">Play Store</a>) and pet projects (<a xmlns="http://www.w3.org/1999/xhtml" href="https://github.com/BoD?tab=repositories&amp;q=&amp;type=source&amp;language=&amp;sort=" target="_blank">Github</a>).</item>
 	</misc>
 </cv>

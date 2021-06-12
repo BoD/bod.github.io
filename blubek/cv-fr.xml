@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?><!-- ééééééééééééééééééé -->
 <cv>
 	<meta>
-		<last-modification>2016-10-31</last-modification>
+		<last-modification>2021-06-12</last-modification>
 		<translation>
 			<phone>Tél : </phone>
 			<email>Email : </email>
@@ -33,35 +33,44 @@
 			<nationality>française</nationality>
 			<marital-situation>célibataire</marital-situation>
 			-->
-			<other>38 ans, nationalité française, célibataire.</other>
+			<other>43 ans, nationalité française.</other>
 			<!--other>Titulaire du permis de conduire.</other-->
 			<!--other>Situation militaire : sursitaire.</other-->
 		</contact>
 		<title>Ingénieur Logiciel</title>
 	</head>
 	<experience>
-		<period from="Mar. 2017" to="NOW">
+		<period from="Sep. 2018" to="NOW">
+			<item>Expert Android chez <a xmlns="http://www.w3.org/1999/xhtml" href="https://qonto.com/" target="_blank">Qonto</a> <span xmlns="http://www.w3.org/1999/xhtml" class="company-details">(néobanque à Paris)</span></item>
+			<item>Nouvelles fonctionnalités et maintenance sur l'appli bancaire <a xmlns="http://www.w3.org/1999/xhtml" href="https://play.google.com/store/apps/details?id=eu.qonto.qonto" target="_blank">Qonto</a>.</item>
+			<item>Concentration sur l'architecture ; le socle, les modules et services core ; garder la codebase maintenable, propre et moderne ; bonne pratiques de l'équipe et documentation ; formation des nouvelles recrues ; outillage ; R&amp;D; etc.</item>
+			<item>Équipe ayant évolué de 3 à 10 développeurs.</item>
+			<environment>Android, Kotlin, MVVM / Clean Architecture, Realm, Databinding, Coroutines, Dagger, JSON, Gitlab, Android Studio, Gradle.</environment>
+		</period>
+
+		<period from="2017" to="2018">
 			<item>Développeur Android chez <a xmlns="http://www.w3.org/1999/xhtml" href="https://www.less.com/" target="_blank">LESS</a> <span xmlns="http://www.w3.org/1999/xhtml" class="company-details">(maintenant <a xmlns="http://www.w3.org/1999/xhtml" href="https://www.blablacar.com/" target="_blank">BlaBlaCar</a>, éditeur de logiciels à Paris)</span></item>
-			<item>Development de l'application <a xmlns="http://www.w3.org/1999/xhtml" href="https://play.google.com/store/apps/details?id=com.less.line" target="_blank">LESS</a>, un service de covoiturage urbain instantané.</item>
-			<item>Responsabilité du projet avec un autre développeur, de la mise en place jusqu'à la publication sur le Play Store puis sur la maintenance / nouvelles fonctionalités.</item>
+			<item>Développement de l'appli <a xmlns="http://www.w3.org/1999/xhtml" href="https://play.google.com/store/apps/details?id=com.less.line" target="_blank">LESS</a>, un service de covoiturage urbain instantané.</item>
+			<item>Responsabilité du projet avec un autre développeur, de la mise en place jusqu'à la publication sur le Play Store puis sur la maintenance / nouvelles fonctionnalités.</item>
 			<item>Mise en place d'une architecture MVVM utilisant Arch components.</item>
 			<item>Implémentation d'un GPS / système de navigation <i xmlns="http://www.w3.org/1999/xhtml">turn by turn</i> (y compris instructions vocales).</item>
-			<item>Aspect très important de la communication temps réelle (PubNub, FCM).</item>
-			<environment>Android, Java, Arch components (ViewModel, Room), RxJava, Databinding, Dagger, Firebase, Mapbox, PubNub, FCM, JSON, Git, Github, Android Studio, Gradle.</environment>
+			<item>Aspect communication temps réel très important (PubNub, FCM).</item>
+			<item>Chez BlaBlaCar : nouvelles fonctionnalités et maintenance sur l'appli <a xmlns="http://www.w3.org/1999/xhtml" href="https://play.google.com/store/apps/details?id=com.blablalines/" target="_blank">BlaBlaCar Daily</a>.</item>
+			<environment>Android, Java, Kotlin, Arch components (ViewModel, Room), RxJava, Databinding, Dagger, Firebase, Mapbox, PubNub, FCM, JSON, Github, Android Studio, Gradle.</environment>
 		</period>
 
 		<period from="2016" to="2017">
 			<item>Développeur Android chez <a xmlns="http://www.w3.org/1999/xhtml" href="https://www.blackpills.com/" target="_blank">Blackpills</a> <span xmlns="http://www.w3.org/1999/xhtml" class="company-details">(société de médias à Paris)</span></item>
-			<item>Développement de l'application <a xmlns="http://www.w3.org/1999/xhtml" href="https://play.google.com/store/apps/details?id=com.blackpills" target="_blank">Blackpills</a>, permettant de parcourir et visionner des mini series originales à consommer sur mobile.</item>
+			<item>Développement de l'appli <a xmlns="http://www.w3.org/1999/xhtml" href="https://play.google.com/store/apps/details?id=com.blackpills" target="_blank">Blackpills</a>, permettant de découvrir et visionner des mini séries originales à consommer sur mobile.</item>
 			<item>Démarrage du projet avec 2 autres développeurs (100% Kotlin).</item>
 			<item>Aspect UI/UX très important.</item>
-			<item>Mise en place du paiement, publicité, mode hors ligne (téléchargement de videos), et plus.</item>
-			<environment>Android, Kotlin, ExoPlayer, HLS, Swagger, JSON, Git, Gitlab, Android Studio, Gradle.</environment>
+			<item>Mise en place du paiement, publicité, mode hors ligne (téléchargement de vidéos), et plus.</item>
+			<environment>Android, Kotlin, ExoPlayer, HLS, Swagger, JSON, Gitlab, Android Studio, Gradle.</environment>
 		</period>
 
 		<period from="2012" to="2016">
 			<item>Lead Développeur Android chez <a xmlns="http://www.w3.org/1999/xhtml" href="https://www.familywall.com/index.html?noautologin" target="_blank">Family And Co.</a> <span xmlns="http://www.w3.org/1999/xhtml" class="company-details">(éditeur de logiciels à Paris - en freelance)</span></item>
-			<item>Développement sur l'application <a xmlns="http://www.w3.org/1999/xhtml" href="https://play.google.com/store/apps/details?id=com.familywall" target="_blank">FamilyWall</a> qui aide à s'organiser, communiquer et partager en famille.</item>
+			<item>Développement sur l'appli <a xmlns="http://www.w3.org/1999/xhtml" href="https://play.google.com/store/apps/details?id=com.familywall" target="_blank">FamilyWall</a> qui aide à s'organiser, communiquer et partager en famille.</item>
 			<item>Aspect UI/UX très important.</item>
 			<item>Réalisation d'un calendrier complet avec vues "mois" et "prochains évènements".</item>
 			<item>Communication avec l'API REST/JSON.</item>
@@ -71,19 +80,19 @@
 
 		<period from="2011" to="2012">
 			<item>Lead Développeur Android chez Plizy <span xmlns="http://www.w3.org/1999/xhtml" class="company-details">(éditeur de logiciels à Paris)</span></item>
-			<item>Développement de l'application <a xmlns="http://www.w3.org/1999/xhtml" href="http://www.droid-life.com/2012/02/23/plizy-released-for-android-tablets-videos-from-all-over-the-web-in-one-convenient-location/" target="_blank">Plizy</a> pour tablettes, un agrégateur personalisé et player vidéo.</item>
+			<item>Développement de l'appli <a xmlns="http://www.w3.org/1999/xhtml" href="http://www.droid-life.com/2012/02/23/plizy-released-for-android-tablets-videos-from-all-over-the-web-in-one-convenient-location/" target="_blank">Plizy</a> pour tablettes, un agrégateur personnalisé et player vidéo.</item>
 			<item>Mise en place et responsabilité du projet de la création jusqu'à la publication sur le Play Store.</item>
 			<item>Communication avec l'API REST/JSON.</item>
-			<item>Player vidéo utilisant une VideoView ou une WebView selon le provider (YouTube, Vimeo, Dailymotion, &#x2026;).</item>
+			<item>Player vidéo utilisant une VideoView ou une WebView selon le provider (YouTube, Vimeo, Dailymotion, etc.).</item>
 			<item>Implémentation d'un mécanisme de cache d'images pour les thumbnails.</item>
 			<environment>Android, Java, Animations, VideoView, WebView, Content Provider, Facebook, Twitter, JSON, Git, Jenkins, Eclipse.</environment>
 		</period>
 
 		<period from="2008" to="2011">
 			<item>Développeur Android et Backend chez <a xmlns="http://www.w3.org/1999/xhtml" href="http://www.voxmobili.com/" target="_blank">Vox Mobili</a> <span xmlns="http://www.w3.org/1999/xhtml" class="company-details">(éditeur de logiciels à Paris)</span></item>
-			<item>Développement sur l'application <a xmlns="http://www.w3.org/1999/xhtml" href="https://play.google.com/store/apps/details?id=com.voxmobili.phonebook2" target="_blank">Phonebook 2.0</a> pour Android, un carnet d'adresses synchronisé et social.</item>
+			<item>Développement sur l'appli <a xmlns="http://www.w3.org/1999/xhtml" href="https://play.google.com/store/apps/details?id=com.voxmobili.phonebook2" target="_blank">Phonebook 2.0</a> pour Android, un carnet d'adresses synchronisé et social.</item>
 			<item>Conception et réalisation d'un moteur générique s'intégrant avec divers réseaux sociaux (Twitter, Facebook, LinkedIn, MySpace, &#x2026;) et encadrement de développeurs réalisant des connecteurs pour ce moteur.</item>
-			<item>Fonctionalités de présence / chat avec le protocole RCS.</item>
+			<item>Fonctionnalités de présence / chat avec le protocole RCS.</item>
 			<item>Développement côté serveur sur le produit PIM (carnet d'adresses, calendrier, tâches, photos / vidéos, etc. synchronisés).</item>
 			<item>Customisations pour les clients : T-Mobile, Bouygues Telecom, Orange, Telstra.</item>
 			<environment>Android, Java, J2EE, Javascript, Ajax, JSON, SOAP, SyncML, Oracle, Tomcat, Subversion, Eclipse.</environment>
@@ -104,7 +113,7 @@
 		<period from="2001" to="2003">
 			<item>Développeur Java chez <a xmlns="http://www.w3.org/1999/xhtml" href="http://www.quotium.com/" target="_blank">Icom Informatique</a> <span xmlns="http://www.w3.org/1999/xhtml" class="company-details">(éditeur de logiciels à Charenton)</span></item>
 			<item>Développement sur les applications web et Swing.</item>
-			<item>Portage en Java d'un interpreteur d'un langage de scripting.</item>
+			<item>Portage en Java d'un interpréteur d'un langage de scripting.</item>
 			<environment>Java, JSP/Servlets, Applets, Swing, Java web start, JavaCC, XML, LDAP, SSL, Visual SourceSafe, Ant, IntelliJ.</environment>
 		</period>
 <!--
@@ -118,25 +127,25 @@
 	<skills>
 		<category name="Programmation">
 			<item>Maîtrise de la plateforme Android.</item>
-			<item>Maîtrise du langage Java.</item>
-			<item>Connaissance des langages Kotlin, C++, C, C#.</item>
-			<item>Environnements Eclipse, IntelliJ.</item>
+			<item>Maîtrise des langages Kotlin et Java.</item>
+			<item>Connaissance des langages C#, C++, C.</item>
+			<item>Environnements IntelliJ/AS et Eclipse.</item>
 			<item>Autres connaissances : Shell, Perl, TCL, Pascal, Ada, assembleur.</item>
 		</category>
-		<category name="Web">
-			<item>Très bonne connaissance de HTML, CSS, Javascript, XML, XSL/T, Ajax.</item>
-			<item>Frameworks: JSP/Servlets, Struts, Turbine.</item>
-			<item>Autres connaissances : Applets, Velocity, FreeMarker, PHP, Flash.</item>
+		<category name="Côté serveur et web">
+			<item>Frameworks: KTOR, JSP/Servlets, Struts, Turbine.</item>
+			<item>Très bonne connaissance de HTML, CSS, Javascript, XML, XSL/T.</item>
+			<item>Autres connaissances : GraphQL, FreeMarker, PHP, Flash, Applets.</item>
 		</category>
 		<category name="Bases de données">
 			<item>Langage SQL ; Oracle, MySQL et SQLite.</item>
-			<item>JPA, Hibernate, JDBC.</item>
+			<item>JPA, Hibernate, JDBC, Realm.</item>
 		</category>
 		<category name="Concepts">
-			<item>Design Patterns ; Architecture Client/Serveur ; UML.</item>
+			<item>Design Patterns ; Clean Architecture ; UML.</item>
 		</category>
 		<category name="Systèmes d'exploitation">
-			<item>Bonne connaissance de Linux / Unix ; OSX ; Windows.</item>
+			<item>Bonne connaissance de Linux / Unix ; MacOS ; Windows.</item>
 		</category>
 		<category name="Anglais">
 			<item>Courant écrit et oral.</item>
@@ -145,21 +154,18 @@
 
 	<education>
 		<!--period from="1999" to="NOW"-->
-		<period from="2005">
-			<item>Formation .NET et C# agréée Microsoft (MS-2349, une semaine).</item>
-		</period>
+<!--		<period from="2005">-->
+<!--			<item>Formation .NET et C# agréée Microsoft (MS-2349, une semaine).</item>-->
+<!--		</period>-->
 		<period from="1998" to="2001">
 			<item>Ingénierie informatique à l'<a xmlns="http://www.w3.org/1999/xhtml" href="http://www.epita.fr/" target="_blank">EPITA</a> (Ecole Pour l'Informatique et les Techniques Avancées), Paris.</item>
-			<item>Spécialité
-				<a xmlns="http://www.w3.org/1999/xhtml" href="http://sigl.epita.fr/" target="_blank">Systèmes d'Information / Génie Logiciel</a>.
-			</item>
+			<item>Spécialité <a xmlns="http://www.w3.org/1999/xhtml" href="http://sigl.epita.fr/" target="_blank">Systèmes d'Information / Génie Logiciel</a>.</item>
 <!--
 			<item>Projet de fin d'année réalisé en équipe : système de gestion de documentation projet (Workflow), environnement Visual J++.</item>
 -->
 		</period>
 		<period from="1996" to="1998">
-			<item>Diplôme Universitaire Technologique informatique, option Génie Informatique, à l'<a xmlns="http://www.w3.org/1999/xhtml" href="http://www.uvsq.fr/" target="_blank">I.U.T. de Vélizy</a>.
-			</item>
+			<item>Diplôme Universitaire Technologique informatique, option Génie Informatique, à l'<a xmlns="http://www.w3.org/1999/xhtml" href="http://www.uvsq.fr/" target="_blank">I.U.T. de Vélizy</a>.</item>
 <!--
 			<item>Projet de fin de cycle réalisé en équipe : portage sous Windows 9x/NT d'un logiciel pédagogique (environnement Delphi).</item>
 -->
@@ -170,9 +176,9 @@
 	</education>
 
 	<misc>
-		<item>Lectures (science, science-fiction), musique (guitare basse), cinéma, roller, geocaching.</item>
+		<item>Lectures (science, science-fiction), cinéma, musique (guitare basse), geocaching.</item>
 		<!--item>Webmaster du site web <a href="http://www.sigl.epita.fr/" target="_blank">EPITA SIGL</a>.</item-->
 		<!--item>Traductions de documentations pour le <a xmlns="http://www.w3.org/1999/xhtml" href="http://www.freenetproject.org/" target="_blank">projet Freenet</a>.</item-->
-		<item>Développement d'applications Android (<a xmlns="http://www.w3.org/1999/xhtml" href="http://jraf.org/android/" target="_blank">JRAF.org/android/</a>).</item>
+		<item>Quelques applis Android "hobby" (<a xmlns="http://www.w3.org/1999/xhtml" href="https://play.google.com/store/apps/developer?id=BoD" target="_blank">Play Store</a>) et projets persos (<a xmlns="http://www.w3.org/1999/xhtml" href="https://github.com/BoD?tab=repositories&amp;q=&amp;type=source&amp;language=&amp;sort=" target="_blank">Github</a>).</item>
 	</misc>
 </cv>
