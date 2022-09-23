@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="640"
+   height="640"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.5 r10040"
+   inkscape:export-filename="/mnt/z/docs/images/Profile pic/profile_pic_2015.png"
+   inkscape:export-xdpi="143.96594"
+   inkscape:export-ydpi="143.96594"
+   sodipodi:docname="profile_pic_2015.svg">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="1"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.50390625"
+     inkscape:cx="410.19298"
+     inkscape:cy="208.63539"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     objecttolerance="50"
+     guidetolerance="20"
+     gridtolerance="10"
+     inkscape:window-width="1440"
+     inkscape:window-height="851"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0">
+    <inkscape:grid
+       type="xygrid"
+       id="grid2989"
+       empspacing="5"
+       visible="true"
+       enabled="false"
+       snapvisiblegridlinesonly="true"
+       spacingx="8px"
+       spacingy="8px"
+       dotted="true"
+       originx="0px"
+       originy="-412.36218px" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#b0db0d;fill-opacity:1;fill-rule:evenodd;stroke:none"
+       id="rect2985"
+       width="640"
+       height="640"
+       x="0"
+       y="0"
+       inkscape:export-filename="/Users/bod/Tmp/profile_pic.png"
+       inkscape:export-xdpi="144"
+       inkscape:export-ydpi="144" />
+    <path
+       sodipodi:type="arc"
+       style="opacity:1;fill:#bb00dd;fill-opacity:1;fill-rule:evenodd;stroke:none"
+       id="path2987"
+       sodipodi:cx="320"
+       sodipodi:cy="320"
+       sodipodi:rx="320"
+       sodipodi:ry="320"
+       d="m 640,320 a 320,320 0 1 1 -640,0 320,320 0 1 1 640,0 z"
+       inkscape:export-filename="/Users/bod/Tmp/profile_pic.png"
+       inkscape:export-xdpi="144"
+       inkscape:export-ydpi="144" />
+    <text
+       xml:space="preserve"
+       x="-81.517685"
+       y="524.7486"
+       id="text3759"
+       inkscape:export-filename="/Users/bod/Tmp/profile_pic.png"
+       inkscape:export-xdpi="144"
+       inkscape:export-ydpi="144"
+       style="font-size:14.92199039px;letter-spacing:-24.86998367px"
+       inkscape:transform-center-y="4.618306"
+       inkscape:transform-center-x="1.7778308"
+       transform="matrix(0.96637984,-0.25869745,0.2589407,0.96547202,0,0)"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan3761"
+         x="-81.517685"
+         y="524.7486"
+         style="font-size:373.0497751px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;letter-spacing:-24.86998366999999988px;writing-mode:lr;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Roboto;-inkscape-font-specification:Roboto"
+         dx="0">B<tspan
+   style="letter-spacing:-29.84398078999999981px;fill:#ffffff;fill-opacity:1;-inkscape-font-specification:Roboto;font-family:Roboto;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:373.0497751px;text-anchor:start;text-align:start;writing-mode:lr;line-height:100%"
+   id="tspan3070">o</tspan>D</tspan></text>
+  </g>
+</svg>
