@@ -48,10 +48,11 @@ pre {
 	background-image: url('../img/stackoverflow.png');
 }
 
-.gplus {
-	background-image: url('../img/gplus.png');
-}
-
 .twitter {
 	background-image: url('../img/twitter.png');
 }
+
+.mastodon {
+    background-image: url('../img/mastodon.svg');
+}
+

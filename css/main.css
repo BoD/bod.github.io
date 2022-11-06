@@ -46,7 +46,7 @@ a {
 	text-shadow: 0 0 0.4em #EEE;
 	text-decoration: none;
 
-	-webkit-transition: background-color .25s ease-in-out;
+	transition: background-color .25s ease-in-out;
 }
 
 a:hover {
@@ -72,7 +72,7 @@ a:hover {
 }
 
 #icons a .caption {
-	-webkit-transition: background-color .25s ease-in-out;
+	transition: background-color .25s ease-in-out;
 }
 
 #icons a:hover .caption {
@@ -86,67 +86,51 @@ a:hover {
 	height: 160px;
 	margin-left: auto;
 	margin-right: auto;
-	-webkit-transition: background-color .25s ease-in-out;
+	transition: background-color .25s ease-in-out;
 }
 
 .icon:hover {
 	background-color: rgba(255, 255, 255, 0.2);
 }
 
+.icon > * {
+    filter: contrast(40%) sepia(100%) saturate(300%) hue-rotate(50deg) brightness(70%) grayscale(20%);
+}
+
+.icon > *:hover {
+    filter: none;
+}
+
 .icon div {
 	width: 160px;
 	height: 160px;
-	-webkit-transition: background-image .25s ease-in-out;
+    transition: filter .25s ease-in-out;
 }
 
 .github {
-	background-image: url('../img/github_green.png');
-}
-
-.github:hover {
 	background-image: url('../img/github.png');
 }
 
 .playstore {
-	background-image: url('../img/playstore_green.png');
-}
-
-.playstore:hover {
 	background-image: url('../img/playstore.png');
 }
 
 .resume {
-	background-image: url('../img/resume_green.png');
-}
-
-.resume:hover {
 	background-image: url('../img/resume.png');
 }
 
 .stackoverflow {
-	background-image: url('../img/stackoverflow_green.png');
-}
-
-.stackoverflow:hover {
 	background-image: url('../img/stackoverflow.png');
 }
 
-.gplus {
-	background-image: url('../img/gplus_green.png');
-}
-
-.gplus:hover {
-	background-image: url('../img/gplus.png');
-}
-
-
 .twitter {
-	background-image: url('../img/twitter_green.png');
-}
-
-.twitter:hover {
 	background-image: url('../img/twitter.png');
 }
+
+.mastodon {
+    background-image: url('../img/mastodon.svg');
+}
+
 
 hr {
 	color: #040;
