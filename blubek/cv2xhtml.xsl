@@ -101,12 +101,18 @@
 							&#160;
 							&#160;
 							<a class="jraf-link" href="benoit-lubek-resume-en.pdf">PDF</a>
+							&#160;
+							&#160;
+							<a class="jraf-link" href="http://server.jraf.org:4000/?explorerURLState=N4IgJg9gxgrgtgUwHYBcQC4QGIAEAVACwEsBnHUnOATxwCcET4EAaHAQzLZwHFa2AHAgEUAMjgCCABQCSAOgA6SXACEEUNjBIIcAdwI0kEFAH5FuQtpIQYtKNqgQw2imwBubIgBs2AI0-aCBHp0MxwCFBR%2BEnQAehiAcyIUAhgfWQc4GOUIABEY3gFhEQBaACUGJjNQgFEkACsIKgBCRUUARxggmnLGRAAKABJvJHiYNniEdBwRNhGxiaaAShxgRRxKBBQuVaR19e8SFABZRyIAMyIEMDWcAF8b%2Bl6EPuHR8cmcIdm3ieWdvfITlQSRo-wBOAutEOADk2IgbgCDihYfDduCfERaMkcmwUAgEXt3gT1khcUQIKTPCDiTgEHAPJ4aYIKQhofAfEEVjT1g4YKhaFQAMKOfFo8E4JDsoI0%2B5iwlgMCPMhg8VsBVKkREJAMGUE2UAhAAD34QUuSDsXLl6xNtHJYEt4vWhzYWIdjvWYFxovd%2BsdyHtKsdnrx3LuuqtOAaPjwSX8NIgtHisyIAC8yRS3eLSaj3U4SFBbfwUOSkKHPNB06WI%2BsdAgfCQkt7HXAEwhpEgzhBw%2BLG3BlaG8wWiEWS93wchXJiKYhUHqCVcYOpixnAx6EPF6E2AS36O3O0zTY4APK0ACaCBdmfBshvOAzkkPAdDTq2rtXQa9z7DVfd639V9zT9qz2X1xVA69bwzc9L3fAEqAvWhQ3A9ZkPIJBDiSGBl12WCJThLdwXLJdR2A2t60bMcUIJEgAGsvE8fsI2zAj1l7RjcwYIcRwpSjv23UgoAAnBB0LbCaSpJAaJIOc0VlWUQGYEB3FtXx-BIDAQDBeQQFeeZ8QwHBtOqaFtOYRRbhAW4gA" target="_blank">GraphQL</a>
 						</td>
 						<td>
 							<a class="jraf-link" href="cv-fr.html">Français</a>
 							&#160;
 							&#160;
 							<a class="jraf-link" href="benoit-lubek-cv-fr.pdf">PDF</a>
+							&#160;
+							&#160;
+							<a class="jraf-link" href="http://server.jraf.org:4000/?explorerURLState=N4IgJg9gxgrgtgUwHYBcQC4QGIAEA1CASykJzgiRwGE8cBnCGOnAGwEMcAzCAJ0RzAByGEgQ4AggAUAkjgDiPNgAcAFgEUAMgDoAOklyS2PKGICOMMUsY9zRHErZ0A-HtwaxUCGDEMYxsQh0KAKEdFZIhABGLGLEpOiuOCooKEp06AD0GQDmhCgqMJFannAZAEIQACIZCsrqGgC0AEqB8AiuieJwTAgAXg0AbozMkYTIOACEenrmCDwAnjgtdG0AFAAk7EjZMGzZCOg4Gmzbu-sTAJQ4wHo4ZAgoHDeUd6yOKACyXoScY2C3OAAvgCeK1EKstjs9gccJsTlD9ldnq8cIRvKg8otkSiuIQeEEAHJsRAAlHsQnE9ovFGjHj5SpsFBUnE4aGk15IRmEChsFiY9l3BBwNiEFgC%2BwqCgIAnwSJza7iu6eEQoBZULzMlk4JCyubi4HU15sMBgUF0ZjYlnG02BOgaQiiOj69kGlEIAAeSjmYyQJgVhruXp43LA-q19EedLD4YEjM1LNdWuQoctWrAccVQOdAZwACsIJEACp5GLi3jZE6EXpcijRlmckk5u7eOhQYNKFDcpCZljQGvdps4ADuCEidDy8Zx5FB0iQ3GzLIncAtmZbbcIHa7C5xyAGeIoiFQLvZCDAMCg-brr282VBk7u04Qs-nOaDIYA8jwAJoIIxXlFaIBOC1pI3peP%2BOJBEYwSpuG6ZMpmdwGohODJhBLLwfeOKJgmmaAVowGUD%2Bf6wTi8y-jwmY4a81F3A6QR5DAna1qRdwNlhdy9hezEDuGI5jhO25IeydAANaiiwK45ux4pLlJcGBOum4UEJWaGnAoRQBBa7tjx4p8kgolOoaiYGgaIAADQgAMRiEGw0SBBgIDYjoICQmc7QYDgrkAGJNK5Fl6ICICAkAA" target="_blank">GraphQL</a>
 						</td>
 					</tr>
 				</table>
