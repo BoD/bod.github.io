@@ -1,0 +1,65 @@
+<html>
+<head>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        :fullscreen button, :fullscreen ul {
+            display: none;
+        }
+
+        button {
+            width: 20%;
+            height: 10%;
+            font-size: xx-large;
+        }
+    </style>
+
+    <script language="javascript">
+        function toggleFullScreen() {
+            const elem = document.documentElement;
+            if (!document.fullscreenElement) {
+                elem.webkitRequestFullScreen();
+            } else {
+                document.exitFullscreen();
+            }
+            let params = (new URL(document.location)).searchParams;
+            let scrollX = params.get("scrollX");
+            let scrollY = params.get("scrollY");
+            setTimeout(function () {
+                window.scroll(scrollX, scrollY);
+            }, 1500);
+        }
+
+        function onLoad() {
+            let params = (new URL(document.location)).searchParams;
+            let scale = params.get("scale");
+            let videoId = params.get("videoId")
+            let iframe = document.getElementsByTagName("iframe")[0];
+            iframe.src = "https://www.youtube-nocookie.com/embed/" + videoId;
+            iframe.width = scale + "%";
+            iframe.height = scale + "%";
+        }
+
+        document.addEventListener("DOMContentLoaded", function() {
+            onLoad();
+        });
+    </script>
+</head>
+<body>
+    <center><button onClick="toggleFullScreen();">Full screen</button></center>
+    <iframe 
+        width="100%" 
+        height="100%" 
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        >
+    </iframe>
+    <ul>
+        <li><a href="https://JRAF.org/ytablet?videoId=HpZAez2oYsA&scale=116&scrollX=0&scrollY=62">Venise</a></li>
+        <li><a href="https://JRAF.org/ytablet?videoId=PnjX0u6B1yA&scale=130&scrollX=0&scrollY=50">Sacré Coeur</a></li>
+    </ul>
+</body>
+</html>
