@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+      background-color: black;
+    }
+    
+    #fullscreen-image {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+    
+    #fullscreen-image img {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0;
+      transition: opacity 3s ease-in-out;
+    }
+
+    #fullscreen-image img.visible {
+      opacity: 1;
+    }
+
+    #clock {
+      position: fixed;
+      bottom: 0.1vmax;
+      right: 0.6vmax;
+      font-family: sans-serif;
+      font-size: 5vmax;
+      color: white;
+      text-shadow: 0 0 1vmax black;
+      opacity: 0.7;
+    }
+
+    button {
+      position: fixed;
+      top: 0.6vmax;
+      left: 0.6vmax;
+      font-size: 2vmax;
+    }
+
+    :fullscreen button{
+      display: none;
+    }
+
+  </style>
+</head>
+<body>
+  <div id="fullscreen-image"></div>
+  <div id="clock"></div>
+  <button onClick="toggleFullScreen();">Full screen</button>
+
+  <script>
+    function toggleFullScreen() {
+        const elem = document.documentElement;
+        if (!document.fullscreenElement) {
+            elem.webkitRequestFullScreen();
+        } else {
+            document.exitFullscreen();
+        }
+    }
+
+
+    // Fetch the JSON document
+    fetch('https://peapix.com/bing/feed')
+      .then(response => response.json())
+      .then(data => {
+        // Create an array to store the image URLs
+        const imageUrls = data.map(item => item.imageUrl);
+        let currentIndex = 0;
+
+        // Function to display the next image
+        function showNextImage() {
+          // Get the URL of the current image
+          const imageUrl = imageUrls[currentIndex];
+
+          // Create an image element and set its source to the URL
+          const imageElement = document.createElement('img');
+          imageElement.src = imageUrl;
+          imageElement.onload = function() {
+            imageElement.classList.add('visible');
+            // Remove the previous image after 5 seconds, if there are at least 2 images
+            if (currentIndex > 1) {
+              setTimeout(function() {
+                if (fullscreenContainer.children.length > 1) {
+                  fullscreenContainer.removeChild(fullscreenContainer.children[0]);
+                }
+              }, 5000);
+            }
+          };
+          imageElement.onclick = function() {
+            showNextImage();
+          };
+
+          // Show the image in fullscreen
+          const fullscreenContainer = document.getElementById('fullscreen-image');
+          fullscreenContainer.appendChild(imageElement);
+
+          // Increment the current index
+          currentIndex = (currentIndex + 1) % imageUrls.length;
+
+          // Schedule the next image to be displayed
+          setTimeout(showNextImage, 60 * 60 * 1000);
+        }
+
+        // Start the slideshow
+        showNextImage();
+      })
+      .catch(error => {
+        console.error('Error fetching JSON:', error);
+      });
+    
+      // Refetch this page once a day
+      setTimeout(function() {
+        window.location.reload();
+      }, 86400000);
+
+      // Update the clock every second
+      setInterval(function() {
+        const clockElement = document.getElementById('clock');
+        const now = new Date();
+        const hours = now.getHours();
+        const minutes = now.getMinutes();
+        clockElement.textContent = `${hours < 10 ? '0' : ''}${hours}:${minutes < 10 ? '0' : ''}${minutes}`;
+      }, 1000);
+  </script>
+</body>
+</html>
