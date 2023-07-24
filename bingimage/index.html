@@ -134,7 +134,7 @@
         const now = new Date();
         const hours = now.getHours();
         const minutes = now.getMinutes();
-        clockElement.textContent = `${hours < 10 ? '0' : ''}${hours}:${minutes < 10 ? '0' : ''}${minutes}`;
+        clockElement.textContent = `${hours}:${minutes < 10 ? '0' : ''}${minutes}`;
       }, 1000);
   </script>
 </body>
