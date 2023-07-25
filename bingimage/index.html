@@ -47,9 +47,9 @@
 
     button {
       position: fixed;
-      top: 0.6vmax;
-      left: 0.6vmax;
-      font-size: 2vmax;
+      top: 1vmax;
+      left: 1vmax;
+      font-size: 4vmax;
     }
 
     :fullscreen button{
@@ -71,6 +71,12 @@
         } else {
             document.exitFullscreen();
         }
+
+        navigator.wakeLock.request().then(function() {
+          console.log('Wake Lock is active');
+        }).catch(function(error) {
+          console.error('Wake Lock error:', error);
+        });
     }
 
 
