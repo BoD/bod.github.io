@@ -120,7 +120,10 @@
 
           // Schedule the next image to be displayed
           if (schedule) {
-            setTimeout(showNextImage, 60 * 60 * 1000, true);
+            const now = new Date();
+            const nextHour = new Date(now.getFullYear(), now.getMonth(), now.getDate(), now.getHours() + 1, 0, 0);
+            const delay = nextHour.getTime() - now.getTime();
+            setTimeout(showNextImage, delay, true);
           }
         }
 
