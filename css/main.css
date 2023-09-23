@@ -32,7 +32,7 @@ html, body, .helper {
 	width: 600px;
 	margin-left: auto;
 	margin-right: auto;
-	background: #1F1200;
+	background-color: #1F1200;
 	border-radius: 30pt / 30pt;
 	padding: 8pt;
 	animation: anim-color 2s infinite alternate ease-in-out, anim-3d-x 3s infinite alternate ease-in-out, anim-3d-y 4s infinite alternate ease-in-out;
@@ -40,10 +40,10 @@ html, body, .helper {
 
 @keyframes anim-color {
 	from {
-		background: #1F1200;
+		background-color: #1F1200;
 	}
 	to {
-		background: #291800;
+		background-color: #291800;
 	}
 }
 
@@ -66,7 +66,6 @@ html, body, .helper {
 		transform: rotateY(.5deg);
 	}
 }
-
 
 pre {
 	font-family: 'term', 'VT323', 'fixedsys', 'Courier', monospace;
@@ -138,7 +137,6 @@ a:hover {
 	height: 160px;
     transition: filter .25s ease-in-out;
 	background-repeat: no-repeat;
-	background-attachment: fixed;
 	background-position: center;
 }
 
