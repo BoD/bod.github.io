@@ -30,6 +30,9 @@ pre {
 	background-size: 96px 96px;
 	width: 96px;
 	height: 96px;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
 }
 
 .github {
@@ -48,8 +51,8 @@ pre {
 	background-image: url('../img/stackoverflow.png');
 }
 
-.twitter {
-	background-image: url('../img/twitter.png');
+.email {
+	background-image: url('../img/email.svg');
 }
 
 .mastodon {
