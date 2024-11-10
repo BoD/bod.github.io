@@ -7,7 +7,7 @@ body {
 x-minitel {
     display: block;
     position:relative;
-    width: 40em;
+    width: 60em;
     max-width: 100%;
     height: auto;
     text-align: center;
@@ -18,8 +18,7 @@ canvas {
     image-rendering: crisp-edges;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
-    width: 40em;
-    max-width: 100%;
+    width: 100%;
     height: auto;
 }
 

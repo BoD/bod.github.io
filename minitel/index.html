@@ -6,18 +6,21 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>3615 JRAF</title>
   <link rel="stylesheet" href="css/minitel-keyboard.css"/>
+  <link rel="stylesheet" href="css/crt.css"/>
 </head>
 <body>
-<!--suppress HtmlUnknownTag -->
 <x-minitel
   data-socket="wss://server.jraf.org/minitel"
   data-speed="1200"
   data-color="false"
 >
-  <canvas data-minitel="screen" class="minitel-screen"></canvas>
-  <canvas data-minitel="cursor" class="minitel-cursor"></canvas>
-
-  <!--suppress HtmlUnknownTag -->
+  <div id="oldeffect" class="minitel-oldeffect">
+    <div class="minitel-screen-container">
+      <canvas data-minitel="screen" class="minitel-screen"></canvas>
+      <canvas data-minitel="cursor" class="minitel-cursor"></canvas>
+      <div id="scanlines" class="minitel-scanlines"></div>
+    </div>
+  </div>
   <import src="import/minitel-keyboard.html"></import>
 
   <audio data-minitel="beep">
