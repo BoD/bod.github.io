@@ -218,7 +218,7 @@ Minitel.VDU = class {
         const ctx = this.canvas.getContext("2d")
 
         ctx.imageSmoothingEnabled = false
-        ctx.fillStyle = "#000000"
+        ctx.fillStyle = "#202020"
         ctx.fillRect(
             0,
             0,

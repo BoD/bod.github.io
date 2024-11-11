@@ -5,14 +5,14 @@
 .minitel-oldeffect {
     position: relative;
     animation: wobbley 100ms infinite;
-    padding: 40px;
-    background: black;
-    border-radius: 60px;
+    padding: 3%;
+    background: #202020;
+    border-radius: 6%;
 }
 
 @keyframes wobbley {
     0% {
-        transform: translateY(1px);
+        transform: translateY(0.2%);
     }
     100% {
         transform: translateY(0);
@@ -26,16 +26,8 @@
     width: 100%;
     height: auto;
     z-index: 2;
-    background: linear-gradient(
-            rgba(0, 0, 0, 0) 50%,
-            rgba(0, 0, 0, 0.50) 50%
-    ),
-    linear-gradient(
-            90deg, rgba(255, 0, 0, 0.08),
-            rgba(0, 255, 0, 0.06),
-            rgba(0, 0, 255, 0.08)
-    );
-    background-size: 100% 2px, 3px 100%;
+    background: linear-gradient(#202020F0 0%, #0000 30%, #0000 70%, #202020F0 100%);
+    background-size: 100% 0.4%;
     aspect-ratio: 320/250;
     pointer-events: none;
 }

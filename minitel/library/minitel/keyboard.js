@@ -210,7 +210,11 @@ Minitel.Keyboard = class {
     onAlpha() {
         this.pageNAlpha.classList.add("hidden")
         this.pageConfig.classList.add("hidden")
-        this.pageAlpha.classList.remove("hidden")
+        if (this.pageAlpha.classList.contains("hidden")) {
+            this.pageAlpha.classList.remove("hidden")
+        } else {
+            this.pageAlpha.classList.add("hidden")
+        }
     }
 
     /**
@@ -220,7 +224,11 @@ Minitel.Keyboard = class {
     onNAlpha() {
         this.pageAlpha.classList.add("hidden")
         this.pageConfig.classList.add("hidden")
-        this.pageNAlpha.classList.remove("hidden")
+        if (this.pageNAlpha.classList.contains("hidden")) {
+            this.pageNAlpha.classList.remove("hidden")
+        } else {
+            this.pageNAlpha.classList.add("hidden")
+        }
     }
 
     /**

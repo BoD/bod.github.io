@@ -8,14 +8,14 @@
   <!-- The Minitel virtual keyboard is drawn with standard buttons -->
   <div class="keyboard-functions">
     <div class="row-special-keys-1">
+<!--      <div class="switch">-->
+<!--        <button data-call="onConfig">⚙</button>-->
+<!--      </div>-->
       <div class="switch">
-        <button data-call="onConfig">⚙</button>
+        <button data-call="onAlpha">ABC</button>
       </div>
       <div class="switch">
-        <button data-call="onAlpha">A</button>
-      </div>
-      <div class="switch">
-        <button data-call="onNAlpha">⌥</button>
+        <button data-call="onNAlpha">123</button>
       </div>
       <div class="special">
         <button data-call="onclick" data-param="Sommaire">Sommaire</button>
@@ -178,7 +178,7 @@
     </div>
   </div>
 
-  <div class="keyboard-page page-alpha" data-minitel="keyalpha">
+  <div class="keyboard-page page-alpha hidden" data-minitel="keyalpha">
     <div class="row-alphabet-1">
       <div class="standard">
         <button data-call="onclick" data-param="a">A</button>

@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@500&display=swap');
+
 body {
     margin: 0;
     padding: 0;
-    background-color: #202020;
+    background-color: black;
 }
 
 x-minitel {
@@ -15,7 +17,6 @@ x-minitel {
 }
 
 canvas {
-    image-rendering: crisp-edges;
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
     width: 100%;
@@ -36,30 +37,33 @@ object {
 }
 
 /* Keyboard */
+
 .minitel-keyboard button {
-    padding: 0;
     height: 3.2em;
     margin: 0;
     width: 100%;
-    background-color: #462e22;
+    background-color: #372d24;
     color: white;
-    border: none;
     border-radius: 1em 0.4em 0.4em 0.4em;
     border: 0.3em solid #202020;
-    text-shadow: 0.05em 0.05em 0.1em black;
-    font-size: 65%;
+    font-size: 1.6em;
+
+    font-family: "Barlow", sans-serif;
+    font-weight: 500;
+    font-style: normal;
 }
 
 .special button, .send button .switch button {
-    text-shadow: 0.05em 0.05em 0.1em #462e22;
+    padding-left: 0.5em;
+    padding-top: 0.2em;
+    display: inline-flex;
 }
 
-.special button { background-color: #a0795a; }
-.send button { background-color: #a4943c; }
+.special button { background-color: #b26f4a; }
+.send button { background-color: #868a42; }
 
 .switch button {
     width: 3em;
-    background-color: blue;
 }
 
 .minitel-keyboard>div>div {
