@@ -46,7 +46,7 @@ object {
     color: white;
     border-radius: 1em 0.4em 0.4em 0.4em;
     border: 0.3em solid #202020;
-    font-size: 1.6em;
+    font-size: 100%;
 
     font-family: "Barlow", sans-serif;
     font-weight: 500;
@@ -63,7 +63,7 @@ object {
 .send button { background-color: #868a42; }
 
 .switch button {
-    width: 3em;
+    width: 3.2em;
 }
 
 .minitel-keyboard>div>div {
