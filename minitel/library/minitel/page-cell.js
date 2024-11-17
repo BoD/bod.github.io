@@ -133,7 +133,7 @@ Minitel.CharCell = class extends Minitel.Cell {
     }
 
     /**
-     * Tests if the character in the cell is alphanumeric (true) or not (false).
+     * Tests if the character in the cell is a character that can be used in a URL (true) or not (false).
      * @return {boolean}
      */
     isUrlCharacter() {
@@ -146,6 +146,7 @@ Minitel.CharCell = class extends Minitel.Cell {
             || this.value === '~'.charCodeAt(0)
             || this.value === ':'.charCodeAt(0)
             || this.value === '/'.charCodeAt(0)
+            || this.value === '@'.charCodeAt(0)
     }
 
     /**
