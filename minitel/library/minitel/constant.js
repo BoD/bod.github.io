@@ -227,6 +227,7 @@ Minitel.pcToMinitelKeys = {
 Minitel.keys = {
     "Videotex": {
         "Escape": [0x1B],
+        "Espace": [0x20],
         " ": [0x20],
         "!": [0x21],
         "\"": [0x22],
