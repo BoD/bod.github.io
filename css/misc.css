@@ -1,0 +1,14 @@
+.misc {
+    width: 60em;
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: right;
+}
+
+.misc a {
+    color: #888;
+}
+
+.misc a:visited {
+    color: #444;
+}

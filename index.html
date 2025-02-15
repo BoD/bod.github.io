@@ -1,109 +1,67 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-<meta name="theme-color" content="#072406">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>3615 JRAF</title>
+  <link rel="stylesheet" href="css/minitel-keyboard.css"/>
+  <link rel="stylesheet" href="css/crt.css"/>
+  <link rel="stylesheet" href="css/misc.css"/>
+</head>
+<body>
+<!--data-socket="wss://server.jraf.org/minitel"-->
+<!--data-socket="ws://localhost:8080/ws"-->
+<x-minitel
+  data-socket="wss://server.jraf.org/minitel"
+  data-speed="1200"
+  data-color="false"
+>
+  <div id="oldeffect" class="minitel-oldeffect">
+    <div class="minitel-screen-container">
+      <canvas data-minitel="screen" class="minitel-screen"></canvas>
+      <canvas data-minitel="cursor" class="minitel-cursor"></canvas>
+      <div id="scanlines" class="minitel-scanlines"></div>
+    </div>
+  </div>
+  <import src="import/minitel-keyboard.html"></import>
 
-<title>JRAF.org, BoD's personal website</title>
+  <audio data-minitel="beep">
+    <source src="sound/minitel-bip.mp3" type="audio/mpeg"/>
+    Too bad, your browser does not support HTML5 audio or mp3 format.
+  </audio>
 
-<link rel="icon" type="image/png" href="favicon.png" />
+</x-minitel>
 
-<link rel="stylesheet" type="text/css" href="css/cssreset-min.css" />
-<link rel="stylesheet" type="text/css" href="css/main.css" />
-<link rel="stylesheet" type="text/css" media="only screen and (max-device-width: 480px)" href="css/mobile.css" />
-<link rel="stylesheet" type="text/css" media="only screen and (min-resolution: 300dpi)" href="css/mobile.css" />
+<div class="misc">
+  <a href="huh.html">huh?</a>
+</div>
 
-<script src="js/logo.js"></script>
-<script>
-	if (location.protocol === 'http:') {
-		location.replace(`https:${location.href.substring(location.protocol.length)}`);
-	}
+<script src="library/generichelper/generichelper.js"></script>
+<script src="library/import-html/import-html.js"></script>
+<script src="library/autocallback/autocallback.js"></script>
+<script src="library/query-parameters/query-parameters.js"></script>
+<script src="library/finite-stack/finite-stack.js"></script>
+<script src="library/key-simulator/key-simulator.js"></script>
+<script src="library/settings-suite/settings-suite.js"></script>
+<script src="library/minitel/constant.js"></script>
+<script src="library/minitel/protocol.js"></script>
+<script src="library/minitel/elements.js"></script>
+<script src="library/minitel/text-grid.js"></script>
+<script src="library/minitel/char-size.js"></script>
+<script src="library/minitel/font-sprite.js"></script>
+<script src="library/minitel/page-cell.js"></script>
+<script src="library/minitel/vram.js"></script>
+<script src="library/minitel/vdu-cursor.js"></script>
+<script src="library/minitel/vdu.js"></script>
+<script src="library/minitel/decoder.js"></script>
+<script src="library/minitel/keyboard.js"></script>
+<script src="library/minitel/minitel-emulator.js"></script>
+<script src="library/minitel/start-emulators.js"></script>
 
-	window.onload = startLogoAnimation;
-</script>
+<script src="app/minitel.js"></script>
+
 <script src="js/nevergonnagiveyouup.js"></script>
 
-</head>
-
-<body>
-<span class="helper"></span>
-<div id="main">
-	<pre id="logo">
-
-
-
-
-	</pre>
-	<p>
-		Welcome to Benoît `BoD' Lubek's personal website.
-	</p>
-	<!-- Preload images -->
-	<img src="img/github.png" width="0" height="0" />
-	<img src="img/playstore.png" width="0" height="0" />
-	<img src="img/resume.png" width="0" height="0" />
-	<img src="img/stackoverflow.png" width="0" height="0" />
-	<img src="img/email.svg" width="0" height="0" />
-	<img src="img/masodon.svg" width="0" height="0" />
-	<table id="icons">
-		<tr>
-			<td>
-				<a href="https://github.com/BoD">
-					<div class="icon">
-						<div class="github"></div>
-					</div>
-					<span class="caption">Github</span>
-				</a>
-			</td>
-			<td>
-				<a href="https://play.google.com/store/apps/developer?id=BoD">
-					<div class="icon">
-						<div class="playstore"></div>
-					</div>
-					<span class="caption">Play Store</span>
-				</a>
-			</td>
-			<td>
-				<a href="blubek">
-					<div class="icon">
-						<div class="resume"></div>
-					</div>
-					<span class="caption">Resumé</span>
-				</a>
-			</td>
-		</tr>
-		<tr>
-			<td>
-				<a href="https://stackoverflow.com/users/15695/bod">
-					<div class="icon">
-						<div class="stackoverflow"></div>
-					</div>
-					<span class="caption">StackOverflow</span>
-				</a>
-			</td>
-			<td>
-				<a href="mailto:BoD@JRAF.org">
-					<div class="icon">
-						<div class="email"></div>
-					</div>
-					<span class="caption">Email</span>
-				</a>
-			</td>
-			<td>
-				<a rel="me" href="https://mastodon.social/@BoD">
-					<div class="icon">
-						<div class="mastodon"></div>
-					</div>
-					<span class="caption">Mastodon</span>
-				</a>
-			</td>
-        </tr>
-	</table>
-</div>
-<script>
-setTimeout(function () {
-    window.scrollTo(0, 1);
-}, 1000);
-</script>
 </body>
 </html>
