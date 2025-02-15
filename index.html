@@ -17,7 +17,7 @@
   data-speed="1200"
   data-color="false"
 >
-  <div id="oldeffect" class="minitel-oldeffect">
+  <div id="oldeffect" class="minitel-oldeffect minitel-oldeffect-animated">
     <div class="minitel-screen-container">
       <canvas data-minitel="screen" class="minitel-screen"></canvas>
       <canvas data-minitel="cursor" class="minitel-cursor"></canvas>
@@ -34,6 +34,7 @@
 </x-minitel>
 
 <div class="misc">
+  <a id="toggleOldEffect" href="javascript:toggleOldEffect()">Realistic: on</a>
   <a href="huh.html">huh?</a>
 </div>
 
@@ -61,7 +62,8 @@
 
 <script src="app/minitel.js"></script>
 
-<script src="js/nevergonnagiveyouup.js"></script>
+<!--<script src="js/nevergonnagiveyouup.js"></script>-->
+<script src="js/oldeffect.js"></script>
 
 </body>
 </html>

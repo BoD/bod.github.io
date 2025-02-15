@@ -4,10 +4,13 @@
 
 .minitel-oldeffect {
     position: relative;
-    animation: wobbley 100ms infinite;
     padding: 3%;
     background: #202020;
     border-radius: 6%;
+}
+
+.minitel-oldeffect-animated {
+    animation: wobbley 100ms infinite;
 }
 
 @keyframes wobbley {
