@@ -1,0 +1,8 @@
+{
+  "id": "https://jraf.org/activitypub/activitypub-to-finger.json",
+  "publicKey": {
+    "id": "https://jraf.org/activitypub/activitypub-to-finger.json#main-key",
+    "owner": "https://jraf.org/activitypub/activitypub-to-finger.json",
+    "publicKeyPem": "-----BEGIN PUBLIC KEY-----\nMIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEA2JBc3UrmfTnyp6fR8HeT\n56hw7eZIMhS/l3kBfaTvqSJe5HRwMROO4xiWStZTX/mG7EAfZguSKuWdtexWE/yz\nWuuYXEYFBbzZ21R3ZlkULl7vdIaCFWXueol/A9+uW3dD5RHLoQZs4zIG+XUGS8kr\nWrPHV5syiVr4mfL4z49erw0tYRheIyn9ml0mdwkeeKDMk1BE7edQdg8dmkTOcCv9\nNbfEZlXYtP6fOO/7010SosSyIF45ET6sWLSrq+GoAST+oVZMRxzL+MFXJR9roZgY\nHv63XdI0mAAQ5JpP++ORSah4L4H24FeuZGP0IXBKRECnPAKbJHiEkF2ZEMsLB0gh\nGIsRyq6Zbo+JwfUrGD7gEHboeJYBH9PpLLuj3icH7+fu5y6GK7KKtEKppb2WPhbs\nNe6W/syvw2auU/5/WC/otWmosSfBItQULBdyBdZANKXAv0EDVwmw0GOCZn+pgWO0\n3OI09gIZ06t84zRQiddfzZbCX9ylC9PacOyZr+uh2ZYDmGWvkXbkEn1/b2nFJOzY\nwU0B5ohTaeWOMlagxlehOEepvPCvxxoIHGBGwLfYpTX71HMDE+gU9KV0C4mn6JQ5\nD7RihTO7tYowe3chlGyuVv7PVlewZxmPGA2WPO4g+VHtn4mvtFWfipWPe8UwH+SB\n3p3Rm24dbz7yxFiDIxogUa0CAwEAAQ==\n-----END PUBLIC KEY-----\n"
+  }
+}
